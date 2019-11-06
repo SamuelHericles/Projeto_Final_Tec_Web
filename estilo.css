@@ -1,6 +1,8 @@
 footer {
     position : absolute;
+    top: 1400px;/*Guambiarra*/
     width: 100%;
+    clear: both;
 }
 
 footer p{
@@ -8,6 +10,6 @@ footer p{
 }
 
 .text-center{
-    width: 30%;
+    width: 100%;
     margin: auto;
 }
