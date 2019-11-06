@@ -1,0 +1,14 @@
+footer {
+    position : absolute;
+    width: 100%;
+}
+
+footer p{
+    color: white;
+}
+
+.text-center{
+    width: 30%;
+    margin: auto;
+}
+  }
