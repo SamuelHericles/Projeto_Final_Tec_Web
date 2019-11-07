@@ -14,6 +14,11 @@ footer p{
     color: white;
 }
 
+.diferencial_h1{/*CSS Ruann*/
+    color: gray;
+}
+
+
 #login {
     position: absolute;
     background-image: url('back.gif');
