@@ -10,20 +10,55 @@
     
 </head>
 
+  <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html">SisTec</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="Servico.html">Serviços</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Diferenciais.html">Diferenciais</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="Contato.html">Contato</a>
+            </li>
+          </ul>
+
+          <form class="form-inline mt-2 mt-md-0" method="POST" action="login.html">
+              <input type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Área do Cliente">
+              <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="login.html">Área do Cliente</a></button>-->
+          </form>
+        
+        </div>
+      </nav>
+    </header>
+
+
         <body id = "login" class="text-center">
-                <form class="form-signin">
+            <form class="form-signin">
               <img class="mb-4" src="logo.png" alt="" width="50%" height="50%">
               <h1 class="h3 mb-3 font-weight-normal">Entrar</h1>
               <label for="inputEmail" class="sr-only">Endereço de email</label>
               <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
               <label for="inputPassword" class="sr-only">Senha</label>
               <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            
               <div class="checkbox mb-3">
+            
                 <label>
                   <input id="inputRemember"type="checkbox" value="remember-me"> Lembrar-me
                 </label>
+            
               </div>
-              <button class="entrarbtn btn btn-lg btn-primary btn-block" type="submit">Entar</button>
+            
+              <input id="btnEntrar" type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Entar">
+
+              <!--<button class="entrarbtn btn btn-lg btn-primary btn-block" type="submit">Entar</button>-->
             </form>
             
             

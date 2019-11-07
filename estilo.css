@@ -1,10 +1,11 @@
 footer {
     position : absolute;
+    top: 1200px;
     width: 100%;
 
 }
 
- footer p{
+footer p{
     color: white;
 }
 
@@ -14,12 +15,17 @@ footer {
 }
 
 #login {
+    position: absolute;
     background-image: url('back.gif');
     background-size: cover;
-    position: absolute;
-    top: 25%;
+    margin: 10px;
+    top: 10%;
     width: 50%;
     left:  25%;
+}
+
+.form-group{
+    margin:20px;
 }
 
 .form-control{
@@ -28,7 +34,7 @@ footer {
 }
 
 #inputEmail{
-    top: 50%;
+    top: 60%;
     left:  25%;
 }
 
@@ -39,16 +45,24 @@ footer {
 
 #inputRemember{
     position: absolute;
-    top: 80%;
+    color: white;
+    top: 90%;
 }
-
-.entrarbtn{
-    top:90%;
-}
-
 
 .container{
+    /*position: absolute;*/
     margin-top: 60px;
     margin-bottom: 60px;
-    width: 60%;
+    width: 80%;
 }
+
+/*#btnEnviaContato{
+    top: 80%;       
+    width: 50%;
+}*/
+
+#btnEntrar{
+    position: absolute;
+    top: 95%;
+}
+
