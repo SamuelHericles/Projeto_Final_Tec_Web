@@ -21,3 +21,9 @@ footer {
     width: 50%;
     left:  25%;
 }
+
+.container{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    width: 60%;
+}
