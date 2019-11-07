@@ -34,8 +34,9 @@
               </li>
             </ul>
 
-            <form class="form-inline mt-2 mt-md-0">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="login.html">Área do Cliente</a></button>
+            <form class="form-inline mt-2 mt-md-0" method="POST" action="login.html">
+                <input type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Área do Cliente">
+              <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="login.html">Área do Cliente</a></button>-->
             </form>
           
           </div>
@@ -48,30 +49,35 @@
           <h2>Formulário de contato por email</h2>
 
           <form method="POST" action="email.php">
+
                   <fieldset>
                       <div class="form-group">
                       <label>Nome completo</label>
                       <input type="text" class="form-control" name="nome-email">
                       </div>
                   </fieldset>
+
                   <fieldset>
                       <div class="form-group">
                           <label>Email completo</label>
                           <input type="email" class="form-control" name="email" placeholder="exemplo@exemplo.com">
                       </div>
                   </fieldset>
+
                   <fieldset>
                       <div class="form-group">
                           <label>Telefone</label>
                           <input type="tel" class="form-control" name="telefone" placeholder="(00)0.0000-0000">
                           </div>
                   </fieldset>
+
                   <fieldset>
                       <div class="form-group">
                           <label for="exampleFormControlTextarea1">Mensagem:</label>
                           <textarea class="form-control" name="mesage" placeholder="Digite sua mensgem aqui" rows="5"></textarea>
                       </div>
                   </fieldset>
+
                   <input type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-dark" value="Enviar">
           </form>
           

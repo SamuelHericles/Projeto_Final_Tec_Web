@@ -1,10 +1,11 @@
 footer {
     position : absolute;
+    top: 1200px;
     width: 100%;
 
 }
 
- footer p{
+footer p{
     color: white;
 }
 
@@ -42,13 +43,12 @@ footer {
     top: 80%;
 }
 
-.entrarbtn{
-    top:90%;
-}
-
-
 .container{
     margin-top: 60px;
     margin-bottom: 60px;
     width: 60%;
 }
+/*.btnEnvia{
+    position: absolute;
+    top: 80%;
+}*/
