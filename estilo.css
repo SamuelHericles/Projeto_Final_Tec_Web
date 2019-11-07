@@ -1,15 +1,9 @@
 footer {
     position : absolute;
-    top: 1400px;/*Guambiarra*/
     width: 100%;
-    clear: both;
+
 }
 
-footer p{
+ footer p{
     color: white;
-}
-
-.text-center{
-    width: 100%;
-    margin: auto;
 }
