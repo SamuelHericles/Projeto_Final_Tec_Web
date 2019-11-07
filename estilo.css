@@ -14,10 +14,9 @@ footer p{
     color: white;
 }
 
-.diferencial_h1{/*CSS Ruann*/
-    color: gray;
+.card-text{/*Modificação -- Ruann */
+    text-align: justify;
 }
-
 
 #login {
     position: absolute;
