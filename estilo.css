@@ -2,7 +2,6 @@ footer {
     position : absolute;
     top: 1200px;
     width: 100%;
-
 }
 
 footer p{
@@ -14,6 +13,7 @@ footer p{
     color: white;
 }
 
+=======
 .card-text{/*Modificação -- Ruann */
     text-align: justify;
 }
@@ -22,55 +22,48 @@ footer p{
     border:20px gray;
 }
 
-#login {
-    position: absolute;
-    background-image: url('back.gif');
-    background-size: cover;
-    margin: 10px;
-    top: 10%;
-    width: 50%;
-    left:  25%;
-}
-
 .form-group{
     margin:20px;
 }
 
-.form-control{
+.entrada{
     position: absolute;
+    left: 25%;
+    top: 25%;
+}
+
+#login {
+    background-image: url('back.gif');
+    background-size: cover;
+    margin: 10px;
     width: 50%;
 }
 
 #inputEmail{
-    top: 60%;
-    left:  25%;
+    margin: 10px;
+    width: 100%;
 }
 
 #inputPassword{
-    top: 65%;
-    left:  25%;
+    margin: 10px;
+    width: 100%;
 }
 
 #inputRemember{
-    position: absolute;
     color: white;
-    top: 90%;
 }
 
+#inputEnter{
+    position: absolute;
+    width: 40%;
+    top: 110%;
+    right: 30%;
+}
+#login a{
+    color : white;
+}
 .container{
-    /*position: absolute;*/
     margin-top: 60px;
     margin-bottom: 60px;
     width: 80%;
 }
-
-/*#btnEnviaContato{
-    top: 80%;       
-    width: 50%;
-}*/
-
-#btnEntrar{
-    position: absolute;
-    top: 95%;
-}
-
