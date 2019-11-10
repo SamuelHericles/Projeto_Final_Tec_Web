@@ -14,6 +14,14 @@ footer p{
     color: white;
 }
 
+.card-text{/*Modificação -- Ruann */
+    text-align: justify;
+}
+
+.card:hover{/*Modificação - Ruann*/
+    border:20px gray;
+}
+
 #login {
     position: absolute;
     background-image: url('back.gif');
