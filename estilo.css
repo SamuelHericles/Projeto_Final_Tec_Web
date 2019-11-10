@@ -13,6 +13,15 @@ footer p{
     color: white;
 }
 
+=======
+.card-text{/*Modificação -- Ruann */
+    text-align: justify;
+}
+
+.card:hover{/*Modificação - Ruann*/
+    border:20px gray;
+}
+
 .form-group{
     margin:20px;
 }
