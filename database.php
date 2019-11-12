@@ -79,19 +79,12 @@
 
         public function getAllFuncionario(){
             $conexao = new PDO('mysql:host=127.0.0.1:3306;dbname=emp','root','1234');
-            $query = "SELECT * FROM produtos";
+            $query = "SELECT * FROM funcionario";
             $lista_sql = $conexao->query($query);
             $lista = $lista_sql->fetchAll();//converte para lista php
             return $lista;
         }
 
-        public function get(){
-            $conexao = new PDO('mysql:host=127.0.0.1:3306;dbname=emp','root','1234');
-            $query = "SELECT * FROM venda WHERE id_cliente = $this->id";
-            $lista_sql = $conexao->query($query);
-            $lista = $lista_sql->fetchAll();//converte para lista php
-            return $lista;
-        }
     }
 
     class Produto{
@@ -101,6 +94,14 @@
         public $quantidade;
         public $categoria;
         public $descricao;
+
+        public function getAllProduto(){
+            $conexao = new PDO('mysql:host=127.0.0.1:3306;dbname=emp','root','1234');
+            $query = "SELECT * FROM produtos";
+            $lista_sql = $conexao->query($query);
+            $lista = $lista_sql->fetchAll();//converte para lista php
+            return $lista;
+        }
     }
 
     class Venda{
