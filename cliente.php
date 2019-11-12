@@ -47,23 +47,29 @@
     <main>
 
     <div class="MPedidos">
-    
+    <div class="container">
+      <h1>Pedidos</h1>
+    </div>
+
     <?php
     
     
     ?>
-    
-    
+        
     
     </div>
+
+    <div class="container"><div class="linha"></div></div>
+
     <div class="Historico">
         <!-- Requer conexão com o banco -->
         <div class="container">
+          <h1>Histórico</h1>
 
         </div>
 
     </div>
-    
+
 <div class="container"><div class="linha"></div></div>
 
     <div id="ADados" class="ADados">
