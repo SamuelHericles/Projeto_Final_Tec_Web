@@ -64,12 +64,12 @@ footer p{
     color : white;
 }
 
-h2{
+.h2page{
     position: absolute;
     left: 14%;
 }
 
-h1{
+.h1page{
     position: absolute;
     left: 14%;
 }

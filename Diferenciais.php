@@ -1,10 +1,12 @@
 <?php
   include "cabecalho.php"
 ?>      
+
+
       <main role="main">
       
         <div class="container">
-          <h1>Diferenciais</h1>
+          <h1 class="h1page">Diferenciais</h1>
 
           <div class=" divone container">
           <h4 class="text-muted pb-4">Os benefícios são muitos para você. O nosso objetivo é auxiliar e facilitar sua vida!</h4>
