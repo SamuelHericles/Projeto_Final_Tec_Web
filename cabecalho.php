@@ -17,24 +17,24 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <a class="navbar-brand" href="index.html">SisTec</a>
+          <a class="navbar-brand" href="index.php">SisTec</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="Servico.html">Serviços</a>
+                <a class="nav-link" href="Servico.php">Serviços</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="Diferenciais.html">Diferenciais</a>
+                <a class="nav-link" href="Diferenciais.php">Diferenciais</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="Contato.html">Contato</a>
+                <a class="nav-link" href="Contato.php">Contato</a>
               </li>
             </ul>
 
-            <form class="form-inline mt-2 mt-md-0" method="POST" action="login.html">
+            <form class="form-inline mt-2 mt-md-0" method="POST" action="login.php">
               <input type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Login">
             </form>
           
