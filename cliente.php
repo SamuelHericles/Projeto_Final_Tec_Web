@@ -45,9 +45,21 @@
 
 
     <main>
+
+    <div class="MPedidos">
     
-    <div class="MPedidos"></div>
+    <?php
+    
+    
+    ?>
+    
+    
+    
+    </div>
     <div class="Historico"></div>
+
+
+    
     <div class="ADados"></div>
 
     </main>
