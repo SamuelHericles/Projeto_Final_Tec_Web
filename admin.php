@@ -42,12 +42,16 @@
 
     <main>
 
+    <div class="container"> <h1>Controle</h1><div class="linha"></div></div>
     <div class="Controle">
         <?php
-    
-    
+
+
         ?>
     </div>
+
+
+    <div class="container"><h1> Cadastro</h1><div class="linha"></div></div>
     <div class="Cadastro">
             <div class="row">
                 <div class="col-md-12">
@@ -88,8 +92,8 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-    </main>
+    </div>
+</main>
 
 
 

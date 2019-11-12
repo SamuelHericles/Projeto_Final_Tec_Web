@@ -17,7 +17,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <a class="navbar-brand" href="#">Olá Zé da Bodega!</a>
+          <a class="navbar-brand" href="#">Olá Zé da Bodega!</a><!--Conexão com o banco-->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
