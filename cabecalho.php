@@ -23,13 +23,13 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="Servico.php">Serviços</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="Diferenciais.php">Diferenciais</a>
               </li>
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a class="nav-link" href="Contato.php">Contato</a>
               </li>
             </ul>

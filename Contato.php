@@ -1,11 +1,11 @@
 <?php
   include "cabecalho.php"
 ?>
-      
+
       <main role="main">
     
         <div class="container">
-          <h2>Formulário para contato</h2>
+          <h1>Formulário para contato</h1>
 
           <form class="formone" method="POST" action="email.php">
 

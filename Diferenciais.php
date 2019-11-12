@@ -5,6 +5,8 @@
       
         <div class="container">
           <h1>Diferenciais</h1>
+
+          <div class=" divone container">
           <h4 class="text-muted pb-4">Os benefícios são muitos para você. O nosso objetivo é auxiliar e facilitar sua vida!</h4>
           <h5 class="text-muted pb-4">Principais benefícios:</h5>
           <div class="row">
@@ -48,6 +50,8 @@
           </div>
         </div>
       </main>
+
+    </div>
 
 <?php
   include "footer.php"
