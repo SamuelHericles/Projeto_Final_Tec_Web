@@ -5,14 +5,14 @@
       <main role="main">
     
         <div class="container">
-          <h2>Formulário de contato para email</h2>
+          <h2>Formulário para contato</h2>
 
-          <form method="POST" action="email.php">
+          <form class="formone" method="POST" action="email.php">
 
                   <fieldset>
                       <div class="form-group">
                       <label>Nome completo:</label>
-                      <input type="text" class="form-control" name="nome-email">
+                      <input type="text" class="form-control" name="nome-email" placeholder="Francisco João da Silva">
                       </div>
                   </fieldset>
 
@@ -37,12 +37,13 @@
                       </div>
                   </fieldset>
                   
-                  <fieldset>
+          </form>
+          
+          <fieldset>
                       <div class="form-group">
                   <input id="btnEnviaContato" type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-dark" value="Enviar">
                       </div>
-                </fieldset>
-          </form>
+          </fieldset>
           
           <div class="wpp">
                   <a href="https://wa.me/5588997502676?text=Gostei%20do%20seu%20blog" target="_blank">
