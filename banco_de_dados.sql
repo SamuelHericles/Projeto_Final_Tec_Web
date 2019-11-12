@@ -1,7 +1,7 @@
 
-/*CREATE DATABASE empresa;*/
+CREATE DATABASE emp;
 
-use empresa;
+use emp;
 
 CREATE TABLE cliente
 (

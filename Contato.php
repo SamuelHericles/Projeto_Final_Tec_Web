@@ -5,14 +5,14 @@
       <main role="main">
     
         <div class="container">
-          <h2>Formulário de contato para email</h2>
+          <h2>Formulário para contato</h2>
 
-          <form method="POST" action="email.php">
+          <form class="formone" method="POST" action="email.php">
 
                   <fieldset>
                       <div class="form-group">
                       <label>Nome completo:</label>
-                      <input type="text" class="form-control" name="nome-email">
+                      <input type="text" class="form-control" name="nome-email" placeholder="Francisco João da Silva">
                       </div>
                   </fieldset>
 
@@ -37,25 +37,20 @@
                       </div>
                   </fieldset>
                   
-                  <fieldset>
+          </form>
+          
+          <fieldset>
                       <div class="form-group">
                   <input id="btnEnviaContato" type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-dark" value="Enviar">
                       </div>
-                </fieldset>
-          </form>
+          </fieldset>
           
           <div class="wpp">
                   <a href="https://wa.me/5588997502676?text=Gostei%20do%20seu%20blog" target="_blank">
                   <i style="margin-top:16px" class="fa fa-whatsapp"></i>
           </div>
       </div>
-      
       </main>
-
-      <footer class="page-footer font-small mt-2 font-weight-light text-white-50 bg-dark footer-copyright text-center py-2 mb-0">
-          <p>&copy; 2014-2019 Sistec Company SA.</p>
-      </footer>    
-
 
 <?php
   include "footer.php"
