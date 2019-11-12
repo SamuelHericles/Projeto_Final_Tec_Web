@@ -13,11 +13,10 @@
     
 </head>
 
-
+      <div class="divlogin">
         <body id = "login" class="text-center">
           
             <form class="form-signin" action = "" method = "post">
-              
               <div class="entrada">
                 <img class="mb-4" src="logo.png" alt="" width="50%" height="50%">
                 <input  type="email" name ="login" id="inputEmail" class="form-control" placeholder="Email:" required="" autofocus="">
@@ -26,10 +25,8 @@
 
                 <input id="inputEnter" type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Entrar">
               </div>
-
             </form>
-            
-            
-            </body>
+        </body>
+      </div>  
 
 </html>

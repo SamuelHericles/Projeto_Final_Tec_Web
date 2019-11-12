@@ -62,6 +62,18 @@ footer p{
 }
 #login a{
     color : white;
+
+}
+
+.divlogin{
+    position: absolute;
+    right: 25%;
+    top: 30%;
+    width: 900px;
+}
+
+.divcliente{   
+    padding: 20px;
 }
 
 .h2page{
