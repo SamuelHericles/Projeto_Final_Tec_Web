@@ -91,3 +91,13 @@ h2{
     margin-bottom: 60px;
     width: 80%;
 }
+
+.Cadastro{
+    position: absolute;
+    width: 80%;
+    top : 50%;
+    left: 10%;
+    right: 25%;
+
+
+}

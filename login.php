@@ -16,23 +16,12 @@
 
         <body id = "login" class="text-center">
           
-            <form class="form-signin" action = "<?php  
-              require_once 'database.php';
-              $cliente = new Cliente();
-
-              $cliente = $cliente->getCliente($_GET["email"], $_GET["senha"]);
-              if($cliente){
-                header("http://localhost:8080/cliente.php");
-              }
-              else{
-                header("#");
-              }
-            ?>" method = "get">
+            <form class="form-signin" action = "" method = "post">
               
               <div class="entrada">
                 <img class="mb-4" src="logo.png" alt="" width="50%" height="50%">
-                <input name ="email" type="email" id="inputEmail" class="form-control" placeholder="Email:" required="" autofocus="">
-                <input name="senha" type="password" id="inputPassword" class="form-control" placeholder="Senha:" required="">
+                <input  type="email" name ="login" id="inputEmail" class="form-control" placeholder="Email:" required="" autofocus="">
+                <input  type="password" name="senha" id="inputPassword" class="form-control" placeholder="Senha:" required="">
                 <a href="#">Registar-se</a>
                 <input id="inputEnter" type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Entrar">
               </div>
