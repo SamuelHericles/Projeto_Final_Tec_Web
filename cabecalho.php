@@ -35,26 +35,9 @@
             </ul>
 
             <form class="form-inline mt-2 mt-md-0" method="POST" action="login.html">
-                <input type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Área do Cliente">
-                <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="login.html">Área do Cliente</a></button>-->
+              <input type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Login">
             </form>
           
           </div>
         </nav>
-      </header>
-      
-      <main role="main">
-      
-      </main>
-
-      <footer class="page-footer font-small mt-2 font-weight-light text-white-50 bg-dark footer-copyright text-center py-2 mb-0">
-          <p>&copy; 2014-2019 Sistec Company SA.</p>
-      </footer>    
-
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-slim.min.js"><\/script>')</script>
-      <script src="js/bootstrap.min.js"></script>
-
-</body>
-
-</html>
+    </header>
