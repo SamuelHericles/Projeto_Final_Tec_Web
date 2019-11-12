@@ -22,7 +22,7 @@
                 <img class="mb-4" src="logo.png" alt="" width="50%" height="50%">
                 <input type="email" id="inputEmail" class="form-control" placeholder="Email:" required="" autofocus="">
                 <input type="password" id="inputPassword" class="form-control" placeholder="Senha:" required="">
-                <a href="#">Registar-se</a>
+                <a href="registrar.php">Registar-se</a>
                 <input id="inputEnter" type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Entrar">
               </div>
 

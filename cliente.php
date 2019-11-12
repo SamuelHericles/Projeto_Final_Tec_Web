@@ -30,7 +30,7 @@
                 <a class="nav-link" href="#">Histórico</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Alterar dados</a>
+                <a class="nav-link" href="#ADados">Alterar dados</a>
               </li>
 
             </ul>
@@ -56,11 +56,46 @@
     
     
     </div>
-    <div class="Historico"></div>
+    <div class="Historico">
+        <!-- Requer conexão com o banco -->
+        <div class="container">
 
+        </div>
 
+    </div>
     
-    <div class="ADados"></div>
+<div class="container"><div class="linha"></div></div>
+
+    <div id="ADados" class="ADados">
+      <div class="container">
+        <h1>Alterar Dados Pessoais</h1>
+      <form action="">
+            <div class="form-group">
+                <label for="nome">Novo nome</label>
+                <input id="nome" name="nome" type="text" class="form-control" placeholder="Nome Completo">
+            </div>
+            <div class="form-group">
+                <label for="email">Novo E-Mail</label>
+                <input id="email" name="email" type="email" class="form-control" placeholder="exemplo@exemplo.com">
+            </div>
+            <div class="form-group">
+            <div class="form-row">
+                <div class = "col">
+                    <label for="senha">Nova Senha</label>
+                    <input id="senha" type="password" name="senha" class="form-control">
+                </div >
+                <div class="col">
+                    <label for="c-senha">Confirme a nova senha</label>
+                    <input id="c-senha" type="password" name="c-senha" class="form-control">
+                </div>
+            </div>
+            </div>
+            <div class="form-group">
+            <button type="submit" class="btn btn-primary form-control">Finalizar</button>
+            </div>
+        </form>
+      </div>    
+  </div>
 
     </main>
 
