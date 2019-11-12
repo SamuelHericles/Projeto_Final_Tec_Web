@@ -101,3 +101,6 @@ h2{
 
 
 }
+.linha{
+    border-bottom: 3px solid lightslategray;
+}
