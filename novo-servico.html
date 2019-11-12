@@ -60,54 +60,45 @@
 
     <main role="main">
       <div class="container">
-        <div class="separator">
-          <h1>Formatações</h1>
-          <h5 class="text-muted">Serviços envolvendo formatação e instalações de programas.</h5>
-          <ul class="list-group list-group-flush mt-4">
-            <li class="list-group-item">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value id="defaultCheck1">
-                <label class="form-check-label" for="defaultCheck1">Formatar HD</label>
-                <p>AWDLIUAWIUDHIAUWHDIUAWHDIUAWHIDU</p>
-                <span class="badge badge-secondary">R$ 150,00</span>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value id="defaultCheck2">
-                <label class="form-check-label" for="defaultCheck2">Instalação pacote office</label>
-                <p>AWDLIUAWIUDHIAUWHDIUAWHDIUAWHIDU</p>
-                <span class="badge badge-secondary">R$ 150,00</span>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value id="defaultCheck3">
-                <label class="form-check-label" for="defaultCheck3">Instalação de Drivers</label>
-                <p>Fazemos a farredura da máquina para dispositivos que necessitam de instalação ou atualização de drivers</p>
-                <span class="badge badge-secondary">R$ 100,00</span>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value id="defaultCheck4">
-                <label class="form-check-label" for="defaultCheck4">Configuração de Impressora</label>
-                <p>AWDLIUAWIUDHIAUWHDIUAWHDIUAWHIDU</p>
-                <span class="badge badge-secondary">R$ 100,00</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="separator">
-          <h1>Manutenção de Eletrodomesticos</h1>
-          <h2>iajwdiawd</h2>
-          <p>aiwdjiawjd</p>
-        </div>
-        <div class="separator">
-          <h1>Formatações</h1>
-          <h2>iajwdiawd</h2>
-          <p>aiwdjiawjd</p>
-        </div>
+        <form>
+          <fieldset>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Tipo de dispositivo</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option selected>Selecione o dispositivo</option>
+                <option>Notebook</option>
+                <option>PC</option>
+                <option>SmartPhone</option>
+                <option>Outro ...</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Qual o problema?</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <option selected>Selecione o dispositivo</option>
+                <option>Notebook</option>
+                <option>PC</option>
+                <option>SmartPhone</option>
+                <option>Outro ...</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Descreva o problema:</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+          </fieldset>
+        </form>
       </div>
     </main>
 

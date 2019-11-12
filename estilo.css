@@ -24,14 +24,7 @@ footer p{
     left:  25%;
 }
 
-.form-group{
-    margin:20px;
-}
 
-.form-control{
-    position: absolute;
-    width: 50%;
-}
 
 #inputEmail{
     top: 60%;
@@ -64,5 +57,25 @@ footer p{
 #btnEntrar{
     position: absolute;
     top: 95%;
+}
+
+.separator{
+    /* Editado por sergio - Serviços  */
+    border: 3px solid #F8F9FA;
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+/* .form-check-input, .form-check-label{
+    position: relative;
+    left: 95%;
+} */
+
+.badge{
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
