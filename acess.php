@@ -6,9 +6,8 @@
     $senha = $_POST['senha'];
 
     // as próximas 3 linhas são responsáveis em se conectar com o bando de dados.
-    $con = mysql_connect("127.0.0.1:3306", "root", "1234");
-    echo $con;
-    $select = mysql_select_db("emp") or die("Sem acesso ao DB, Entre em contato com o Administrador, gilson_sales@bytecode.com.br");
+    $con = new PDO('mysql:host=127.0.0.1:3306;dbname=emp','root','1234');
+    $select = mysql_select_db("emp",$con) or die("Sem acesso ao DB, Entre em contato com o Administrador, gilson_sales@bytecode.com.br");
     
     $test = mysql_query("SELECT * FROM `cliente`");
     echo $test;
