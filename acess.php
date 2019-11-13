@@ -6,26 +6,26 @@
     $senha = $_POST['senha'];
 
     // as próximas 3 linhas são responsáveis em se conectar com o bando de dados.
-    $con = new PDO('mysql:host=127.0.0.1:3306;dbname=emp','root','1234');
-    $select = mysql_select_db("emp",$con) or die("Sem acesso ao DB, Entre em contato com o Administrador, gilson_sales@bytecode.com.br");
+    $con = mysqli_connect("127.0.0.1:3306","root","1234","emp");
+    /*$select = mysql_select_db("emp",$con) or die("Sem acesso ao DB, Entre em contato com o Administrador, gilson_sales@bytecode.com.br");*/
+    $test = mysqli_query($con,"SELECT * FROM cliente");
+    /*echo $test;*/
     
-    $test = mysql_query("SELECT * FROM `cliente`");
-    echo $test;
     // A variavel $result pega as varias $login e $senha, faz uma 
     //pesquisa na tabela de usuarios
-    $result = mysql_query("SELECT * FROM `cliente` WHERE `email` = '$login' AND `senha`= '$senha'");
+    $result = mysqli_query($con,"SELECT * FROM cliente WHERE email = '$login' AND senha= '$senha'");
     /* Logo abaixo temos um bloco com if e else, verificando se a variável $result foi 
     bem sucedida, ou seja se ela estiver encontrado algum registro idêntico o seu valor
     será igual a 1, se não, se não tiver registros seu valor será 0. Dependendo do 
     resultado ele redirecionará para a página site.php ou retornara  para a página 
     do formulário inicial para que se possa tentar novamente realizar o login */
-    if(mysql_num_rows ($result) > 0 ){
+    if(mysqli_num_rows($result) > 0 ){
         $_SESSION['login'] = $login;
         $_SESSION['senha'] = $senha;
-        header('location:Contato.php');
+        header('location:cliente.php');
     } else {
       unset ($_SESSION['login']);
       unset ($_SESSION['senha']);
-      header('location:index.php');
+      header('location:login.php');
     }
 ?>
