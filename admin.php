@@ -42,13 +42,38 @@
 
     <main>
 
-      <div class="container"> <h1>Controle</h1><div class="linha"></div></div>
+      <!--<div class="container"> <h1>Controle</h1><div class="linha"></div></div>-->
       <div class="Controle">
           <?php?>
       </div>
 
 
-      <div class="container"><h1> Cadastro</h1><div class="linha"></div></div>
+      <!--<div class="container"><h1> Cadastro</h1><div class="linha"></div></div>-->
+        <div class="Cadastro_prod">
+          <form class="form-signin" method = "post" action ="cadastro_prod.php" >
+                    <p>Nome do produto:</p>
+                    <input type="text" name ="nome" class="form-control" required="" >
+
+                    <p>Preço</p>
+                    <input  type="number" name="preco" class="form-control"  required="">
+
+                    <p>Quantidade</p>
+                    <input  type="number" name="qt" class="form-control"  required="">
+
+                    <p>Categoria</p>
+                    <input  type="text" name="cat" class="form-control"  required="">
+
+                    <p>Descrição</p>
+                    <textarea class="form-control" name="desc" placeholder="Digite sua mensgem aqui" rows="5"></textarea>
+
+                    <input  type="submit"  name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Cadastrar">
+          </form>
+        </div>
+       
+
+
+
+
       <div class="Cadastro">
               <div class="row">
                   <div class="col-md-12">

@@ -118,12 +118,20 @@ footer p{
 .Cadastro{
     position: absolute;
     width: 80%;
-    top : 50%;
+    top : 5%;
     left: 10%;
     right: 25%;
+    margin :100px;
 
 
 }
 .linha{
     border-bottom: 3px solid lightslategray;
+}
+
+.Cadastro_prod{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 40%;
 }
