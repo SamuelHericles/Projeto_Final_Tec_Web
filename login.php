@@ -21,7 +21,6 @@
                 <input  type="login" name ="login" id="inputEmail" class="form-control" placeholder="Email:" required="" autofocus="">
                 <input  type="password" name="senha" id="inputPassword" class="form-control" placeholder="Senha:" required="">
                 <a href="registrar.php">Registar-se</a>
-
                 <input id="inputEnter" type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Entrar">
               </div>
             </form>
