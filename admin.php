@@ -42,58 +42,55 @@
 
     <main>
 
-    <div class="container"> <h1>Controle</h1><div class="linha"></div></div>
-    <div class="Controle">
-        <?php
+      <div class="container"> <h1>Controle</h1><div class="linha"></div></div>
+      <div class="Controle">
+          <?php?>
+      </div>
 
 
-        ?>
-    </div>
+      <div class="container"><h1> Cadastro</h1><div class="linha"></div></div>
+      <div class="Cadastro">
+              <div class="row">
+                  <div class="col-md-12">
+                      <h2>Produtos</h2>
+                  </div>
+              </div>
 
+          <div class="row">
+              <div class="col-md-4">
+                  <a href="#" class="btn btn-info btn-block">Crair Novo Produto</a>
+              </div>
+          </div>
 
-    <div class="container"><h1> Cadastro</h1><div class="linha"></div></div>
-    <div class="Cadastro">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>Produtos</h2>
-                </div>
-            </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <a href="#" class="btn btn-info btn-block">Crair Novo Produto</a>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Nome</th>
-                        <th>Preço</th>
-                        <th>Quantidade</th>
-                        <th>Categoria</th>
-                        <th class="acao">Editar</th>
-                        <th class="acao">Excluir</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>O Senhor dos Aneis</td>
-                            <td>R$ 80,55</td>
-                            <td>2</td>
-                            <td>Livros</td>
-                            <td><a href="#" class="btn btn-info">Editar</a></td>
-                            <td><a href="#" class="btn btn-danger">Excluir</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-    </div>
-</main>
+          <div class="row">
+              <div class="col-md-12">
+                  <table class="table">
+                      <thead>
+                      <tr>
+                          <th>Id</th>
+                          <th>Nome</th>
+                          <th>Preço</th>
+                          <th>Quantidade</th>
+                          <th>Categoria</th>
+                          <th class="acao">Editar</th>
+                          <th class="acao">Excluir</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>1</td>
+                              <td>O Senhor dos Aneis</td>
+                              <td>R$ 80,55</td>
+                              <td>2</td>
+                              <td>Livros</td>
+                              <td><a href="#" class="btn btn-info">Editar</a></td>
+                              <td><a href="#" class="btn btn-danger">Excluir</a></td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+         </div>
+       </main>
 
 
 
