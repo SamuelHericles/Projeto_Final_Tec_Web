@@ -17,7 +17,6 @@
 
       <div class="divlogin">
         <body id = "login" class="text-center">
-          
           <form class="form-signin" method = "post" action ="acess.php" >
               <div class="entrada">
                 <img class="mb-4" src="logo.png" alt="" width="50%" height="50%">

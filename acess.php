@@ -24,8 +24,6 @@
         $_SESSION['senha'] = $senha;
         header('location:cliente.php');
     } else {
-      unset ($_SESSION['login']);
-      unset ($_SESSION['senha']);
-      header('location:login.php');
+        header('location:login.php');
     }
 ?>
