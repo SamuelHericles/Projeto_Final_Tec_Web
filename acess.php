@@ -1,15 +1,14 @@
 <?php 
     // session_start inicia a sessão
     session_start();
+
     // as variáveis login e senha recebem os dados digitados na página anterior
     $login = $_POST['login'];
     $senha = $_POST['senha'];
 
     // as próximas 3 linhas são responsáveis em se conectar com o bando de dados.
     $con = mysqli_connect("127.0.0.1:3306","root","1234","emp");
-    /*$select = mysql_select_db("emp",$con) or die("Sem acesso ao DB, Entre em contato com o Administrador, gilson_sales@bytecode.com.br");*/
     $test = mysqli_query($con,"SELECT * FROM cliente");
-    /*echo $test;*/
     
     // A variavel $result pega as varias $login e $senha, faz uma 
     //pesquisa na tabela de usuarios
@@ -26,4 +25,5 @@
     } else {
         header('location:login.php');
     }
+
 ?>

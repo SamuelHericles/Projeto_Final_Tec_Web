@@ -1,3 +1,4 @@
+<?php ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,7 +18,6 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <a class="navbar-brand" href="#">Olá Zé da Bodega!</a><!--Conexão com o banco-->
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -35,8 +35,8 @@
 
             </ul>
 
-            <form class="form-inline mt-2 mt-md-0" method="POST" action="login.php">
-              <input type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-blue" value="Sair">
+            <form class="form-inline mt-2 mt-md-0" method="post" action="logout.php">
+              <input type="submit" name="BTSair" class="btn btn-primary btn-lg btn-block btn-blue" value="Sair">
             </form>
           
           </div>
