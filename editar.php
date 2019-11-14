@@ -61,7 +61,7 @@
                     <input  type="text" name="cat" class="form-control"  required="" value="<?php echo $dado['categoria']; ?>">
 
                     <p>Descrição</p>
-                    <textarea class="form-control" name="desc" placeholder="Digite sua mensgem aqui" rows="5" value="<?php echo $dado['descricao']; ?>"></textarea>
+                    <input  type="text" name="desc" class="form-control"   required="" value="<?php echo $dado['descricao']; ?>">
 
                     <input  type="submit"  name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Editar">
           </form>

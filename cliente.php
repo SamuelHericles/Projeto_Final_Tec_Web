@@ -82,29 +82,38 @@
     <div id="ADados" class="ADados">
       <div class="container">
         <h1>Alterar Dados Pessoais</h1>
-      <form action="">
-            <div class="form-group">
-                <label for="nome">Novo nome</label>
-                <input id="nome" name="nome" type="text" class="form-control" value="<?php echo $dado['nome']?>" >
-            </div>
-            <div class="form-group">
-                <label for="email">Novo E-Mail</label>
-                <input id="email" name="email" type="email" class="form-control" value="<?php echo $dado['email']?>">
-            </div>
-            <div class="form-group">
-            <div class="form-row">
-                <div class = "col">
-                    <label for="senha">Nova Senha</label>
-                    <input id="senha" type="password" name="senha" class="form-control" value="<?php echo $dado['senha']?>">
-                </div >
-                <div class="col">
-                    <label for="c-senha">Confirme a nova senha</label>
-                    <input id="c-senha" type="password" name="c-senha" class="form-control">
+          <form method="post" action="editar_db_cliente.php" >
+                <div class="form-group">
+                    <label for="nome">Novo nome</label>
+                    <input id="nome" name="nome" type="text" class="form-control" value="<?php echo $dado['nome']?>" >
                 </div>
-            </div>
-            </div>
-            <input  type="submit"  name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Finalizae">
-        </form>
+
+                <div class="form-group">
+                    <label for="email">Novo E-Mail</label>
+                    <input id="email" name="email" type="email" class="form-control" value="<?php echo $dado['email']?>">
+                </div>
+
+                <div class="form-group">
+
+                  <div class="form-row">
+
+                      <div class = "col">
+                          <label for="senha">Nova Senha</label>
+                          <input id="senha" type="password" name="senha" class="form-control" value="<?php echo $dado['senha']?>">
+                      </div >
+
+                      <div class="col">
+                          <label for="c-senha">Confirme a nova senha</label>
+                          <input id="c-senha" type="password" name="c_senha" class="form-control">
+                      </div>
+
+                  </div>
+
+                </div>
+
+                <input  type="submit"  name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Finalizar">
+                
+          </form>
       </div>    
   </div>
 
