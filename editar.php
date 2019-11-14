@@ -46,19 +46,8 @@
         </nav>
     </header>
 
-    <?php 
-    $id = $dado['id'];
-    $nome = $dado['nome'];
-    $preco = $dado['preco'];
-    $qt = $dado['quantidade'];
-    $cat = $dado['categoria'];
-    $desc = $dado['descricao'];
-
-    $result_cliente = mysqli_query($con,"UPDATE produtos SET nome='$nome', preco ='$preco', quantidade='$qt', categoria='$cat', descricao='$desc' WHERE id = '$id' ");
-
-?>
 <div class="Cadastro_prod">
-          <form class="form-signin" method = "post" action ="admin.php" >
+          <form class="form-signin" method = "post" action ="editar_db.php" >
                     <p>Nome do produto:</p>
                     <input type="text" name ="nome" class="form-control" required="" value="<?php echo $dado['nome']; ?>">
 

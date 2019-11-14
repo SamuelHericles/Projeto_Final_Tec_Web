@@ -1,8 +1,10 @@
 <?php
-  $login = $_POST['login'];
-  $con      = mysqli_connect("127.0.0.1:3306","root","1234","emp");
-  $result_cliente = mysqli_query($con,"SELECT * FROM cliente where email='$login'");
-  $dado = $result_cliente->fetch_array();
+    session_start();
+
+    $login = $_SESSION['login'];
+    $con      = mysqli_connect("127.0.0.1:3306","root","1234","emp");
+    $result_cliente = mysqli_query($con,"SELECT * FROM cliente where email='$login'");
+    $dado = $result_cliente->fetch_array();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -87,13 +89,13 @@
             </div>
             <div class="form-group">
                 <label for="email">Novo E-Mail</label>
-                <input id="email" name="email" type="email" class="form-control" placeholder="exemplo@exemplo.com">
+                <input id="email" name="email" type="email" class="form-control" value="<?php echo $dado['email']?>">
             </div>
             <div class="form-group">
             <div class="form-row">
                 <div class = "col">
                     <label for="senha">Nova Senha</label>
-                    <input id="senha" type="password" name="senha" class="form-control">
+                    <input id="senha" type="password" name="senha" class="form-control" value="<?php echo $dado['senha']?>">
                 </div >
                 <div class="col">
                     <label for="c-senha">Confirme a nova senha</label>
