@@ -1,9 +1,9 @@
 <?php
     session_start();
-
+    
     $login = $_SESSION['login'];
-    $con      = mysqli_connect("127.0.0.1:3306","root","1234","emp");
-    /*echo "<script> console.log('$login') </script>";*/
+    $con  = mysqli_connect("127.0.0.1:3306","root","1234","emp");
+    echo "<script> console.log('$login') </script>";
 
     $result_cliente = mysqli_query($con,"SELECT * FROM cliente WHERE email = '$login' ");
     $dado = $result_cliente->fetch_array();
@@ -105,7 +105,7 @@
       <div class="container">
         <h1>Alterar Dados Pessoais</h1>
           <form method="post" action="editar_db_cliente.php" >
-                <input type="hidden" value="<?php echo $dado['id']?>">
+                <input type="hidden" name="id" value="<?php echo $dado['id']?>">
                 <div class="form-group">
                     <label for="nome">Novo nome</label>
                     <input id="nome" name="nome" type="text" class="form-control" value="<?php echo $dado['nome']?>" >

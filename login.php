@@ -18,7 +18,7 @@
           <form class="form-signin" method = "post" action ="acess.php" >
               <div class="entrada">
                 <img class="mb-4" src="logo.png" alt="" width="50%" height="50%">
-                <input  type="login" name ="login" id="inputEmail" class="form-control" placeholder="Email:" required="" autofocus="">
+                <input  type="loginb" name ="login" id="inputEmail" class="form-control" placeholder="Email:" required="" autofocus="">
                 <input  type="password" name="senha" id="inputPassword" class="form-control" placeholder="Senha:" required="">
                 <a href="registrar.php">Registar-se</a>
                 <input id="inputEnter" type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Entrar">
