@@ -3,21 +3,14 @@
 
     $login = $_SESSION['login'];
     $con      = mysqli_connect("127.0.0.1:3306","root","1234","emp");
-    /*echo "<script> console.log('$login') </script>";*/
     
-    $result_cliente = mysqli_query($con,"SELECT * FROM cliente WHERE email = '$login' ");
-    $dado = $result_cliente->fetch_array();
-    
-    $s1 = $dado['id'];
-
-    $result_vend = mysqli_query($con,"SELECT * FROM venda WHERE id_cliente = $s1");
+    $result_vend = mysqli_query($con,"SELECT * FROM venda");
     
     $dadosv = $result_vend->fetch_array();
 
     $iv = $dadosv['id_cliente'];
-    echo "<script> console.log('$iv') </script>";
-
     $result_hist = mysqli_query($con,"SELECT p.id, p.nome,p.categoria, p.descricao, v.andamento, p.preco FROM venda v INNER JOIN cliente c ON c.id = v.id_cliente INNER JOIN produtos p ON v.id_produto=p.id WHERE v.id_cliente = '$iv' ");
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -47,7 +40,7 @@
                 <a class="nav-link" href="#">Meus pedidos</a>
               </li>
               <li class="nav-item active">
-                    <a class="nav-link" href="#">Histórico</a>
+                <a class="nav-link" href="#">Histórico</a>
               </li>
               <li class="nav-item active">
                 <a class="nav-link" href="#ADados">Alterar dados</a>
@@ -67,7 +60,7 @@
     <main>
 
 
-    div class="Historico">
+    <div class="Historico">
         <!-- Requer conexão com o banco -->
         <div class="container">
           <h1>Histórico</h1>
@@ -100,45 +93,6 @@
 
     </div>
 
-
-    <div id="ADados" class="ADados">
-      <div class="container">
-        <h1>Alterar Dados Pessoais</h1>
-          <form method="post" action="editar_db_cliente.php" >
-                <input type="hidden" value="<?php echo $dado['id']?>">
-                <div class="form-group">
-                    <label for="nome">Novo nome</label>
-                    <input id="nome" name="nome" type="text" class="form-control" value="<?php echo $dado['nome']?>" >
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Novo E-Mail</label>
-                    <input id="email" name="email" type="email" class="form-control" value="<?php echo $dado['email']?>">
-                </div>
-
-                <div class="form-group">
-
-                  <div class="form-row">
-
-                      <div class = "col">
-                          <label for="senha">Nova Senha</label>
-                          <input id="senha" type="password" name="senha" class="form-control" value="<?php echo $dado['senha']?>">
-                      </div >
-
-                      <div class="col">
-                          <label for="c-senha">Confirme a nova senha</label>
-                          <input id="c-senha" type="password" name="c_senha" class="form-control">
-                      </div>
-
-                  </div>
-
-                </div>
-
-                <input  type="submit"  name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Finalizar">
-                
-          </form>
-      </div>    
-  </div>
 
     </main>
 
