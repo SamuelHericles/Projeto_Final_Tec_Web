@@ -1,4 +1,9 @@
-<?php ?>
+<?php
+  $login = $_POST['login'];
+  $con      = mysqli_connect("127.0.0.1:3306","root","1234","emp");
+  $result_cliente = mysqli_query($con,"SELECT * FROM cliente where email='$login'");
+  $dado = $result_cliente->fetch_array();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -78,7 +83,7 @@
       <form action="">
             <div class="form-group">
                 <label for="nome">Novo nome</label>
-                <input id="nome" name="nome" type="text" class="form-control" placeholder="Nome Completo">
+                <input id="nome" name="nome" type="text" class="form-control" value="<?php echo $dado['nome']?>" >
             </div>
             <div class="form-group">
                 <label for="email">Novo E-Mail</label>
@@ -96,9 +101,7 @@
                 </div>
             </div>
             </div>
-            <div class="form-group">
-            <button type="submit" class="btn btn-primary form-control">Finalizar</button>
-            </div>
+            <input  type="submit"  name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Finalizae">
         </form>
       </div>    
   </div>

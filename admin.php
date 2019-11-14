@@ -1,4 +1,5 @@
 <?php
+  $nome = $_GET['nome'];
   $con      = mysqli_connect("127.0.0.1:3306","root","1234","emp");
   $consulta = "SELECT * FROM produtos";
   $result_cliente = mysqli_query($con,"SELECT * FROM produtos");
@@ -54,8 +55,8 @@
 
 
       <!--<div class="container"><h1> Cadastro</h1><div class="linha"></div></div>-->
-        <div class="Cadastro_prod">
-          <form class="form-signin" method = "post" action ="cadastro_prod.php" >
+        <div href="#" class="Cadastro_prod">
+          <form class="form-signin" method = "post" action ="cadastro_prod.php" >                    
                     <p>Nome do produto:</p>
                     <input type="text" name ="nome" class="form-control" required="" >
 
@@ -72,6 +73,7 @@
                     <textarea class="form-control" name="desc" placeholder="Digite sua mensgem aqui" rows="5"></textarea>
 
                     <input  type="submit"  name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Cadastrar">
+                  
           </form>
         </div>
        
@@ -102,8 +104,8 @@
                           <th>Preço</th>
                           <th>Quantidade</th>
                           <th>Categoria</th>
-                          <th class="acao">Editar</th>
-                          <th class="acao">Excluir</th>
+                          <th >Editar</th>
+                          <th >Excluir</th>
                       </tr>
                       </thead>
                       <tbody>
