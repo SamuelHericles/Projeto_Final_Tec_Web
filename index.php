@@ -1,7 +1,7 @@
 <?php
   include "cabecalho.php"
 ?>
-  <main class="main" role="main">
+  <main role="main">
   
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         

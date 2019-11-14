@@ -1,7 +1,8 @@
 <?php
   include "cabecalho.php"
 ?>
-  <div class="container">
+ <main role="main">
+    <div class="container">
 
     <div class="row">
 
@@ -31,7 +32,7 @@
 
         <div class="card card-outline-secondary my-4">
           <div id="1" class="card-header">
-            Product Reviews 1
+          Manutenção de eletrônicos
           </div>
           <div class="card-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
@@ -43,13 +44,13 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
             <small class="text-muted">Posted by Anonymous on 3/1/17</small>
             <hr>
-            <a href="#" class="btn btn-success">Leave a Review</a>
+            <a href="#" class="btn btn-success">Fazer orçamento</a>
           </div>
         </div>
 
         <div class="card card-outline-secondary my-4">
           <div id="2" class="card-header">
-            Product Reviews 2
+          Formatação e restauração
           </div>
           <div class="card-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
@@ -61,13 +62,13 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
             <small class="text-muted">Posted by Anonymous on 3/1/17</small>
             <hr>
-            <a href="#" class="btn btn-success">Leave a Review</a>
+            <a href="#" class="btn btn-success">Fazer orçamento</a>
           </div>
         </div>
 
         <div class="card card-outline-secondary my-4">
           <div id="3" class="card-header">
-            Product Reviews 3
+          Upgrades de computadores
           </div>
           <div class="card-body">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
@@ -79,7 +80,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
             <small class="text-muted">Posted by Anonymous on 3/1/17</small>
             <hr>
-            <a href="#" class="btn btn-success">Leave a Review</a>
+            <a href="#" class="btn btn-success">Fazer orçamento</a>
           </div>
         </div>
         
@@ -88,6 +89,7 @@
     </div>
     
   </div>
+</main>
 
   <footer class="footerserv page-footer font-small mt-2 font-weight-light text-white-50 bg-dark footer-copyright text-center py-2 mb-0">
           <p>&copy; 2014-2019 Sistec Company SA.</p>

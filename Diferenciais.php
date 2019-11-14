@@ -2,16 +2,17 @@
   include "cabecalho.php"
 ?>      
 
-
-      <main role="main">
-      
+<main role="main">
+  
         <div class="container">
           <h1 class="h1page">Diferenciais</h1>
 
           <div class=" divone container">
           <h4 class="text-muted pb-4">Os benefícios são muitos para você. O nosso objetivo é auxiliar e facilitar sua vida!</h4>
           <h5 class="text-muted pb-4">Principais benefícios:</h5>
+
           <div class="row">
+
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="usabilidade-web.jpg">
@@ -22,6 +23,7 @@
                 </div>
               </div>
             </div>
+
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="instalar.png">
@@ -31,6 +33,7 @@
                 </div>
               </div>
             </div>
+
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <img class="card-img-top" src="acessar.jpg">
@@ -41,6 +44,8 @@
               </div>
             </div>
           </div>
+
+        <div class="row">  
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <img class="card-img-top" src="economia.jpg">
@@ -50,10 +55,31 @@
               </div>
             </div>
           </div>
-        </div>
-      </main>
 
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top" src="comodidade.png">
+              <div class="card-body">
+                <h4>Comodidade e Rapidez</h4>
+                <p class="card-text">Você não precisará pagar licença. Seu gasto será somente com os seus produtos.</p>
+              </div>
+            </div>
+          </div>  
+
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top" src="avaliacao.jpeg">
+              <div class="card-body">
+                <h4>Confiabilidade</h4>
+                <p class="card-text">Você não precisará pagar licença. Seu gasto será somente com os seus produtos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
     </div>
+</main>
 
 <?php
   include "footer.php"

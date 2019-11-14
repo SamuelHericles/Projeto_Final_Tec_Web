@@ -6,6 +6,15 @@ footer {
     /* height: 40px; */
 }
 
+.navbar{
+    margin: 0px;
+
+}
+
+.bodycolor{
+    background-color: #E8E8E8;
+}
+
 .footercont {
     position : absolute;
     /* position: static ; */
@@ -155,8 +164,3 @@ footer p{
     left: 30%;
     width: 40%;
 }
-/* 
-.main{
-    background-color: darkgray;
-    height: 1158px;
-} */
