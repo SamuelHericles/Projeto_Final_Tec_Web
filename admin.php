@@ -1,3 +1,8 @@
+<?php
+  $con      = mysqli_connect("127.0.0.1:3306","root","1234","emp");
+  $consulta = "SELECT * FROM produtos";
+  $result_cliente = mysqli_query($con,"SELECT * FROM produtos");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -102,15 +107,19 @@
                       </tr>
                       </thead>
                       <tbody>
-                          <tr>
-                              <td>1</td>
-                              <td>O Senhor dos Aneis</td>
-                              <td>R$ 80,55</td>
-                              <td>2</td>
-                              <td>Livros</td>
-                              <td><a href="#" class="btn btn-info">Editar</a></td>
-                              <td><a href="#" class="btn btn-danger">Excluir</a></td>
-                          </tr>
+                          <?php while($dado = $result_cliente->fetch_array()) { ?>
+                              <tr>
+                                <td><?php echo $dado['nome']; ?></td>
+                                <td><?php echo $dado['preco']; ?></td>
+                                <td><?php echo $dado['quantidade']; ?></td>
+                                <td><?php echo $dado['categoria']; ?></td>
+                                <td><?php echo $dado['descricao']; ?></td>
+                                <td>
+                                  <a href="editar.php?nome=<?php echo $dado['nome']; ?>">Editar</a>
+                                  <a href="excluir.php?nome=<?php echo $dado['nome']; ?>">Excluir</a>
+                                </td>
+                              </tr>
+                              <?php } ?>
                       </tbody>
                   </table>
               </div>
