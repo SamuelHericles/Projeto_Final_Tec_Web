@@ -4,7 +4,7 @@
     $login = $_SESSION['login'];
     $con      = mysqli_connect("127.0.0.1:3306","root","1234","emp");
     /*echo "<script> console.log('$login') </script>";*/
-    
+
     $result_cliente = mysqli_query($con,"SELECT * FROM cliente WHERE email = '$login' ");
     $dado = $result_cliente->fetch_array();
     
