@@ -1,8 +1,28 @@
 footer {
     position : absolute;
+    /* position: static ; */
     top: 1200px;
     width: 100%;
+    /* height: 40px; */
 }
+
+.footercont {
+    position : absolute;
+    /* position: static ; */
+    top: 1000px;
+    width: 100%;
+    /* height: 40px; */
+}
+
+
+.footerserv {
+    position : absolute;
+    /* position: static ; */
+    top: 2650px;
+    width: 100%;
+    /* height: 40px; */
+}
+
 
 footer p{
     color: white;
@@ -135,3 +155,8 @@ footer p{
     left: 30%;
     width: 40%;
 }
+/* 
+.main{
+    background-color: darkgray;
+    height: 1158px;
+} */
