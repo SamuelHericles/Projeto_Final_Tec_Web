@@ -61,7 +61,7 @@
               <img class="card-img-top" src="comodidade.png">
               <div class="card-body">
                 <h4>Comodidade e Rapidez</h4>
-                <p class="card-text">Você não precisará pagar licença. Seu gasto será somente com os seus produtos.</p>
+                <p class="card-text">Você garante o melhor serviço do mercado, com rapidez e sem sair do conforto da sua casa.</p>
               </div>
             </div>
           </div>  
@@ -71,7 +71,7 @@
               <img class="card-img-top" src="avaliacao.jpeg">
               <div class="card-body">
                 <h4>Confiabilidade</h4>
-                <p class="card-text">Você não precisará pagar licença. Seu gasto será somente com os seus produtos.</p>
+                <p class="card-text">Nossa empresa é renomada e ganhadora de vários prémios nacionais e internacionais que gaarante a você um serviço de alta qualidade.</p>
               </div>
             </div>
           </div>
