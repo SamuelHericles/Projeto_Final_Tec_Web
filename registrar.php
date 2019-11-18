@@ -16,40 +16,41 @@
 </head>
 
 <body id="login">
-    
+
+<div class="divregistrar">
     <div class="container">
-    
         <form method = "post" action="registro_db.php">
             
             <div class="form-group">
-                <label for="nome">Nome</label>
+                <label class="textregist" for="nome">Nome</label>
                 <input id="nome" name="nome" type="text" class="form-control" placeholder="Nome Completo">
             </div>
             
             <div class="form-group">
-                <label for="email">E-Mail</label>
+                <label class="textregist" for="email">E-Mail</label>
                 <input id="email" name="email" type="email" class="form-control" placeholder="exemplo@exemplo.com">
             </div>
             
             <div class="form-group">
                 <div class="form-row">
                     <div class = "col">
-                        <label for="senha">Senha</label>
-                        <input id="senha" type="password" name="senha" class="form-control">
+                        <label class="textregist" for="senha">Senha</label>
+                        <input id="senha" type="password" name="senha" class="form-control" placeholder="********">
                     </div >
                     <div class="col">
-                        <label for="c-senha">Confirme a senha</label>
-                        <input id="c-senha" type="password" name="c-senha" class="form-control">
+                        <label class="textregist" for="c-senha">Confirme a senha</label>
+                        <input id="c-senha" type="password" name="c-senha" class="form-control" placeholder="********">
                     </div>
                 </div>
             </div>
 
             <div class="form-group">
-                <input type="submit" class="btn btn-primary form-control" value="Finalizar">
+                <input id="inputRegistrar" type="submit" class="btn btn-primary btn-lg btn-block btn-green" value="Registrar">
             </div>
 
         </form>
     </div>
+</div>
     
 </body>
 

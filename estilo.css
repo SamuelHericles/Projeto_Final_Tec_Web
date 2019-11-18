@@ -83,12 +83,24 @@ footer p{
     color: white;
 }
 
+.textregist{
+    color: #ffff;
+}
+
 #inputEnter{
     position: absolute;
     width: 40%;
     top: 110%;
     right: 30%;
 }
+
+#inputRegistrar{
+    position: absolute;
+    width: 25%;
+    top: 90%;
+    right: 37%;
+}
+
 #login a{
     color : white;
 
@@ -99,6 +111,13 @@ footer p{
     right: 25%;
     top: 30%;
     width: 900px;
+}
+
+.divregistrar{
+    position: absolute;
+    right: 25%;
+    top: 25%;
+    width: 800px;
 }
 
 .divcliente{   
