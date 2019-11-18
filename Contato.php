@@ -34,7 +34,7 @@
                   <fieldset>
                       <div class="form-group">
                           <label for="exampleFormControlTextarea1">Mensagem:</label>
-                          <textarea class="form-control" name="mesage" placeholder="Digite sua mensgem aqui" rows="5"></textarea>
+                          <textarea class="form-control" name="mesage" placeholder="Digite sua mensgem aqui..." rows="5"></textarea>
                       </div>
                   </fieldset>
                   
