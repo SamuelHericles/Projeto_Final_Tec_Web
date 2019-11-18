@@ -1,7 +1,14 @@
 <?php
-  $con      = mysqli_connect("127.0.0.1:3306","root","1234","emp");
+  $con      = mysqli_connect("127.0.0.1:3306","root","123456789","emp");
   $consulta = "SELECT * FROM produtos";
   $result_cliente = mysqli_query($con,"SELECT * FROM produtos");
+    
+  // $categoria = mysqli_query($con,"SELECT nome FROM categoria");
+  
+  // $categorias = $categoria->fetch_array();
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -44,91 +51,87 @@
         </nav>
     </header>
 
-
     <main>
 
       <!--<div class="container"> <h1>Controle</h1><div class="linha"></div></div>-->
       <div class="Controle">
-          <?php?>
+          <?php ?>
       </div>
 
 
       <!--<div class="container"><h1> Cadastro</h1><div class="linha"></div></div>-->
-        <div href="#" class="Cadastro_prod">
-          <form class="form-signin" method = "post" action ="cadastro_prod.php" >                    
-                    <p>Nome do produto:</p>
-                    <input type="text" name ="nome" class="form-control" required="" >
 
-                    <p>Preço</p>
-                    <input  type="number" name="preco" class="form-control"  required="">
-
-                    <p>Quantidade</p>
-                    <input  type="number" name="qt" class="form-control"  required="">
-
-                    <p>Categoria</p>
-                    <input  type="text" name="cat" class="form-control"  required="">
-
-                    <p>Descrição</p>
-                    <textarea class="form-control" name="desc" placeholder="Digite sua mensgem aqui" rows="5"></textarea>
-
-                    <input  type="submit"  name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Cadastrar">
-                  
-          </form>
-        </div>
-       
-
-
-
-
-      <div class="Cadastro">
-              <div class="row">
-                  <div class="col-md-12">
-                      <h2>Produtos</h2>
-                  </div>
-              </div>
-
-          <div class="row">
-              <div class="col-md-4">
-                  <a href="#" class="btn btn-info btn-block">Crair Novo Produto</a>
-              </div>
+        <div class="container">
+        <h2>Produtos</h2>
+          <div class="table-responsive">
+              <table class="table table-striped table-bordered">
+              <thead>
+              <tr>
+                  <th>Nome</th>
+                  <th>Preço</th>
+                  <th>Quantidade</th>
+                  <th>Categoria</th>
+                  <th>Descrição</th>
+                  <th>Editar/Excluir</th>
+                </tr>
+                </thead> 
+                <tbody>
+                <?php while($dado = $result_cliente->fetch_array()) { ?>
+                    <tr>
+                      <td><?php echo $dado['nome']; ?></td>
+                      <td> R$ <?php echo $dado['preco']; ?></td>
+                      <td><?php echo $dado['quantidade']; ?></td>
+                      <td><?php echo $dado['categoria']; ?></td>
+                      <td><?php echo $dado['descricao']; ?></td>
+                      <td>
+                        <a href="editar.php?nome=<?php echo $dado['nome']; ?>">Editar</a>
+                        <a href="excluir.php?nome=<?php echo $dado['nome']; ?>">Excluir</a>
+                      </td>
+                     </tr>
+                <?php } ?>
+                </tbody>   
+              </table>
           </div>
-
           <div class="row">
-              <div class="col-md-12">
-                  <table class="table">
-                      <thead>
-                      <tr>
-                          <th>Id</th>
-                          <th>Nome</th>
-                          <th>Preço</th>
-                          <th>Quantidade</th>
-                          <th>Categoria</th>
-                          <th >Editar</th>
-                          <th >Excluir</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                          <?php while($dado = $result_cliente->fetch_array()) { ?>
-                              <tr>
-                                <td><?php echo $dado['nome']; ?></td>
-                                <td><?php echo $dado['preco']; ?></td>
-                                <td><?php echo $dado['quantidade']; ?></td>
-                                <td><?php echo $dado['categoria']; ?></td>
-                                <td><?php echo $dado['descricao']; ?></td>
-                                <td>
-                                  <a href="editar.php?nome=<?php echo $dado['nome']; ?>">Editar</a>
-                                  <a href="excluir.php?nome=<?php echo $dado['nome']; ?>">Excluir</a>
-                                </td>
-                              </tr>
-                              <?php } ?>
-                      </tbody>
-                  </table>
-              </div>
-         </div>
+            <div class="col-md-4">
+              <a href="categorias-criar.php" class="btn btn-info btn-block">Criar Nova Categoria</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="container"><div class="linha"></div></div>
+        <div class="container">
+         <h2>Cadastro novo produto</h2>
+         <form action="cadastro_prod.php" method="post">
+           <div class="form-group">
+             <label for="nome">Nome</label>
+             <input id="nome" name="nome" type="text" class="form-control">
+           </div>
+           <div class="form-group">
+             <label for="preco">Preço</label>
+             <input id="preco" name="preco" type="number" class="form-control">
+           </div>
+           <div class="form-group">
+             <label for="quantidade">Quantidade</label>
+             <input id="quantidade" name="qt" type="number" class="form-control">
+           </div>
+           <div class="form-group">
+             <label for="categoria">Categoria</label>
+             <select id="categoria" name="cat" type="text" class="form-control">
+             <option value="servico" >Serviço</option>
+             <option value="produto">Produto</option>
+             </select>
+           </div>
+           <div class="form-group">
+             <label for="descricao">Descrição</label>
+             <textarea id="descricao" name="desc" class="form-control"></textarea>
+           </div>
+           <button type="submit" class="btn btn-primary">Cadastrar</button>
+         </form>
+        </div>
+        
+
        </main>
-
-
-
 </body>
 
 </html>
