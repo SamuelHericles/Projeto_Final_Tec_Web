@@ -1,5 +1,6 @@
 <?php
-  $con      = mysqli_connect("127.0.0.1:3306","root","123456789","emp");
+  include('conexao.php');
+  /*$con      = mysqli_connect("127.0.0.1:3306","root","0123456789","emp");*/
   $consulta = "SELECT * FROM produtos";
   $result_cliente = mysqli_query($con,"SELECT * FROM produtos");
     

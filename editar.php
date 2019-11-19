@@ -1,6 +1,7 @@
 <?php 
     $nome = $_GET['nome'];
-    $con      = mysqli_connect("127.0.0.1:3306","root","1234","emp");
+    include('conexao.php');
+    /*$con      = mysqli_connect("127.0.0.1:3306","root","1234","emp");*/
     $result_cliente = mysqli_query($con,"SELECT * FROM produtos WHERE nome = '$nome'");
     $dado = $result_cliente->fetch_array();
 ?>

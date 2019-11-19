@@ -1,7 +1,7 @@
 <?php 
     $nome = $_POST['nome'];
-    
-    $con  = mysqli_connect("127.0.0.1:3306","root","1234","emp");
+    include('conexao.php');
+    /*$con  = mysqli_connect("127.0.0.1:3306","root","1234","emp");*/
     $nome = $_POST['nome'];
     $preco = $_POST['preco'];
     $qt = $_POST['qt'];

@@ -1,13 +1,13 @@
 <?php 
     // session_start inicia a sessão
     session_start();
-
+    include('conexao.php');
     // as variáveis login e senha recebem os dados digitados na página anterior
     $login = $_POST['login'];
     $senha = $_POST['senha'];
 
     // as próximas 3 linhas são responsáveis em se conectar com o bando de dados.
-    $con = mysqli_connect("127.0.0.1:3306","root","123456789","emp");
+    /*$con = mysqli_connect("127.0.0.1:3306","root","1234","emp");*/
     /*$test = mysqli_query($con,"SELECT * FROM cliente");*/
     
     // A variavel $result pega as varias $login e $senha, faz uma 
