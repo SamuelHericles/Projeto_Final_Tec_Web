@@ -87,6 +87,11 @@ footer p{
     color: #ffff;
 }
 
+.colortextcar{
+    color: black;
+    font-weight: bold;
+}
+
 #inputEnter{
     position: absolute;
     width: 40%;

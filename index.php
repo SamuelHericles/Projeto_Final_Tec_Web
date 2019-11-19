@@ -13,34 +13,37 @@
       
       <div class="carousel-inner">  
         <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#191970"/></svg>
+          <img class="card-img-top"src="web-design-2906159_1920.jpg">
           <div class="container">
             <div class="carousel-caption text-left">
-              <h1>Manutenção de Computadores</h1>
-              <p>Realizamos manutenção em cada componente do seu computador por uma preço acessivel para você.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Faça um orçamento</a></p>
+              <h1 >Manutenção de Computadores</h1>
+              <p >Realizamos manutenção em cada componente do seu computador ou outro dispositivo de hardware pelo preço mais acessivel do mercado.</p>
+              <p><a class="btn btn-lg btn-primary" href="Servico.php" role="button">Faça um orçamento</a></p>
             </div>
           </div>
         </div>
 
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#0000FF"/></svg>
+          <img class="card-img-top" src="keyboard-498396_1920.jpg" >
           <div class="container">
             <div class="carousel-caption">
-              <h1>Formatação de computadores</h1>
-              <p>Removemos todos os vírus e outros problemas em seu computador.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Faça um orçamento</a></p>
+              <h1 class="colortextcar">Uma empresa diferenciada</h1>
+              <p class="colortextcar">Venha nos conhecer e saber um pouco mais sobre a gente.</p>
+              <p><a class="btn btn-lg btn-primary" href="Diferenciais.php" role="button">Fazemos diferente</a></p>
             </div>
           </div>
         </div>
 
         <div class="carousel-item">
           <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
+          <img class="card-img-top" src="aerial-3641197_1920.jpg">
           <div class="container">
             <div class="carousel-caption text-right">
-              <h1>Manutenção de eletrodomésticos</h1>
-              <p>Realizamos manuteção desde equipemantos simples de uma casa até máquina industriais e hospitalares.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Faça um orçamento</a></p>
+              <h1 >Vamos conversar! ;)</h1>
+              <p >Tire suas dúvidas através do contato, temos um equipe sempre à diposição para lhe atender.</p>
+              <p><a class="btn btn-lg btn-primary" href="Contato.php" role="button">Fale conosco</a></p>
             </div>
           </div>
         </div>

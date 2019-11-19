@@ -8,7 +8,7 @@
           <h1 class="h1page">Diferenciais</h1>
 
           <div class=" divone container">
-          <h4 class="text-muted pb-4">Os benefícios são muitos para você. O nosso objetivo é auxiliar e facilitar sua vida!</h4>
+          <h4 class="text-muted pb-4">Os benefícios são muitos para você. O nosso principal objetivo é facilitar sua vida!</h4>
           <h5 class="text-muted pb-4">Principais benefícios:</h5>
 
           <div class="row">
