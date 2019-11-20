@@ -8,7 +8,7 @@
         <div class="container"> 
           <h1 class="h1page">Formulário para contato</h1>
 
-          <form class="formone" method="POST" action="email.php">
+          <form class="formone" method="POST" action="emai.php">
 
                   
                       <div class="form-group">
