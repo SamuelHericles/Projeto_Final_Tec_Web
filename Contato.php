@@ -69,5 +69,29 @@
       </script>    
 
 </body>
+<!--
+const createTransport = require('nodemailer').createTransport;
 
+const transporter = createTransport({
+  host: process.env.SMTP_SERVER,
+  port: 587,
+  secure: false, // true for 465, false for other ports
+  auth: {
+    user: process.env.TRANSPORTER_EMAIL,
+    pass: process.env.TRANSPORTER_PASS,
+  },
+});
+
+async function email(options) {
+  return new Promise((resolve, reject) => {
+    transporter.sendMail(options, (error, info) => {
+      if (error) {
+        reject(error);
+      }
+      resolve((info || { messageId: 0 }).messageId);
+    });
+  });
+}
+
+module.exports = email;-->
 </html>
