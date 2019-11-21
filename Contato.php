@@ -8,7 +8,7 @@
         <div class="container"> 
           <h1 class="h1page">Formulário para contato</h1>
 
-          <form class="formone" method="POST" action="https://formspree.io/danieljorge17@hotmail.com">
+          <form class="formone" method="POST" action="https://formspree.io/sisteccorporation@outlook.com">
 
 
                       <div class="form-group">
