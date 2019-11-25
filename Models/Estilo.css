@@ -1,9 +1,7 @@
 footer {
     position : absolute;
-    /* position: static ; */
     top: 1200px;
     width: 100%;
-    /* height: 40px; */
 }
 
 .navbar{
@@ -17,25 +15,18 @@ footer {
 
 .footercont {
     position : absolute;
-    /* position: static ; */
     top: 1000px;
     width: 100%;
-    /* height: 40px; */
 }
-
 
 .footerserv {
     position : absolute;
-    /* position: static ; */
     top: 2800px;
     width: 100%;
-    /* height: 40px; */
 }
-
 
 footer p{
     color: white;
-    /* position: absolute; */
     align-items: center;
 }
 
@@ -44,11 +35,11 @@ footer p{
     color: white;
 }
 
-.card-text{/*Modificação -- Ruann */
+.card-text{
     text-align: justify;
 }
 
-.card:hover{/*Modificação - Ruann*/
+.card:hover{
     border:20px gray;
 }
 
@@ -63,7 +54,7 @@ footer p{
 }
 
 #login {
-    background-image: url('back.gif');
+    background-image: url('../Imagens/Back.gif');
     background-size: cover;
     margin: 10px;
     width: 50%;
@@ -108,7 +99,6 @@ footer p{
 
 #login a{
     color : white;
-
 }
 
 .divlogin{
@@ -142,14 +132,12 @@ footer p{
     position: absolute;
     top: 20% ;
     width: 1200px;
-
 }
 
 .formone{
     position: absolute;
     top: 20% ;
     width: 1200px;
-
 }
 
 
@@ -157,7 +145,6 @@ footer p{
     height: 50px;
     width: 100px;
     position: absolute;
-    /* right: 50%; */
     align-content: center;
     top: 100%;
 }
@@ -175,16 +162,19 @@ footer p{
     left: 10%;
     right: 25%;
     margin :100px;
-
-
 }
+
 .linha{
     border-bottom: 3px solid lightslategray;
 }
 
 .Cadastro_prod{
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 30%;
     width: 40%;
+}
+
+.tabela_prod tr{
+    text-align: center;
 }
