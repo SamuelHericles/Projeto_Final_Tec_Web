@@ -20,7 +20,17 @@
               <div class="card-body">
                 <h3 class="card-title">Oferta do mês!</h3>
                 <h4>$259.99</h4>
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
+                <p class="card-text">Produto Larado!
+                    Garantia de 1 Ano Conosco.
+                    Marca Samsung.
+                    Interface Sata.
+                    Dimensão do Hd 2.5".
+                    Tecnologia Ssd.
+                    Capacidade 500 Gb.
+                    Tipo de drive Interno.
+                    Descrição:
+                    A unidade Ssd 860 Evo Sata Iii da Samsung oferece excelente desempenho. Sua arquitetura 3D V-Nand é uma revolução no mundo de memórias flash em termos de
+                    densidade, desempenho e resistência.</p>
               </div>
             </div>
             <div class="card card-outline-secondary my-4">
