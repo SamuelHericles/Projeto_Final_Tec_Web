@@ -14,6 +14,9 @@
   </head>
 
   <body id = "login" class="text-center">
+    <form class="backbtn form-inline " method="POST" action="../index.php">
+      <input type="submit" name="BTEnvia" class="btn btn-info " value="Voltar">
+    </form>
     <div class="divlogin">
       <form class="form-signin" method = "post" action ="./Acess.php" >
         <div class="entrada">

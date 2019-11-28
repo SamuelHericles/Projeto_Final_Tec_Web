@@ -9,6 +9,13 @@ footer {
 
 }
 
+.backbtn{
+    position: absolute;
+    width: 8%;
+    top: 2%;
+    left: 92%;
+}
+
 .bodycolor{
     background-color: #E8E8E8;
 }
@@ -21,7 +28,7 @@ footer {
 
 .footerserv {
     position : absolute;
-    top: 2800px;
+    top: 3400px;
     width: 100%;
 }
 

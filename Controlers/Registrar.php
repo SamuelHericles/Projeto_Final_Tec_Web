@@ -15,6 +15,9 @@
     </head>
 
     <body id="login">
+        <form class="backbtn form-inline " method="POST" action="../Controlers/Login.php">
+            <input type="submit" name="BTEnvia" class="btn btn-info " value="Voltar">
+        </form>
         <div class="divregistrar">
             <div class="container">
                 <form method = "post" action="../Controlers/Registro_db.php">
