@@ -11,7 +11,7 @@
       </ol>    
       <div class="carousel-inner">  
         <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#191970"/></svg>
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
           <img class="card-img-top"src="Imagens/Web-design.jpg">
           <div class="container">
             <div class="carousel-caption text-left">
@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#0000FF"/></svg>
+          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
           <img class="card-img-top" src="../Imagens/Keyboard.jpg" >
           <div class="container">
             <div class="carousel-caption">
