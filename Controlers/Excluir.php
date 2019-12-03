@@ -5,5 +5,5 @@
 
     $result_cliente = mysqli_query($con,"DELETE FROM produtos WHERE id = '$id'");
     
-    header('location:../Views/Admin.php');
+    header('location:../Views/Admin.php?v=1');
 ?>

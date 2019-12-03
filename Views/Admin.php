@@ -31,10 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Controle de estoque</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Cadastra de produtos</a>
+              <a class="nav-link" href="Admin.php">Menu</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="andamento-servicos.php">Andamento de Serviços</a>
@@ -52,6 +49,13 @@
         <?php ?>
       </div>
       <div class="container">
+      <?php
+          $v = $_GET['v'];
+          if ($v==1) {
+            echo "<script>
+            window.alert('Produto excluído com sucesso!');
+          </script>";
+        } ?>
         <h2>Produtos</h2>
           <div class="table-responsive">
             <div class="tabela_prod">

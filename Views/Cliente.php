@@ -11,7 +11,7 @@
     $dadosv = $result_vend->fetch_array();
     $iv = $dadosv['id_cliente'];
 
-    $result_hist = mysqli_query($con,"SELECT p.id, p.nome,p.categoria, p.descricao, v.andamento, p.preco FROM venda v INNER JOIN cliente c ON c.id = v.id_cliente INNER JOIN produtos p ON v.id_produto=p.id WHERE v.id_cliente = '$iv' ");
+    $result_hist = mysqli_query($con,"SELECT p.id, p.nome,p.categoria, p.descricao, v.andamento, p.preco, p.quantidade FROM venda v INNER JOIN cliente c ON c.id = v.id_cliente INNER JOIN produtos p ON v.id_produto=p.id WHERE v.id_cliente = '$iv' ");
 
     $result = mysqli_query($con,"SELECT * FROM produtos");
     $produto = $result->fetch_array();
@@ -51,6 +51,13 @@
     <main>
       <div class="Historico">
         <div class="container">
+        <?php
+          $v = $_GET['v'];
+          if ($v==1) {
+            echo "<script>
+            window.alert('Pedido feito com sucesso!');
+          </script>";
+        } ?>
         <h1>Histórico</h1>
           <div class="col-md-12">
             <table class="table">
@@ -96,16 +103,17 @@
                 </thead> 
                 <tbody>
                   <?php while($dado1 = $result->fetch_array()){?>
+                    <?php if($dado1['quantidade']>0){ ?>
                     <tr>
                       <td><?php echo $dado1['nome']; ?></td>
                       <td> R$ <?php echo $dado1['preco']; ?></td>
                       <td><?php echo $dado1['quantidade']; ?></td>
                       <td><?php echo $dado1['categoria']; ?></td>
                       <td><?php echo $dado1['descricao']; ?></td>
-                      <td><a class="text-primary" href="../Controlers/Pedir.php?id=<?php echo $dado1['id'];?>&id_cliente=<?php echo $dado['id'];?>">Pedir</a></td>
+                      <td><a class="text-primary" href="../Controlers/Pedir.php?id=<?php echo $dado1['id'];?>&id_cliente=<?php echo $dado['id'];?>&qtd=<?php echo $dado1['quantidade'];?>">Pedir</a></td>
                     
                     </tr>
-                  <?php } ?>
+                  <?php } } ?>
                 </tbody>   
               </table>
             </div>

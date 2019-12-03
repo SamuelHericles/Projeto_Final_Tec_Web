@@ -29,5 +29,17 @@
       </form>
     </div>  
   </body>
-
+  <?php
+          $v = $_GET['v'];
+          if ($v==1) {
+            echo "<script>
+            window.alert('Email ja cadastrado!');
+          </script>";
+        }
+        if ($v==2) {
+          echo "<script>
+          window.alert('As senhas devem ser iguais!');
+        </script>";
+      }
+         ?>
 </html>
