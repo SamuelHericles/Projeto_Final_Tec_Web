@@ -6,6 +6,6 @@
 
     mysqli_query($con,"UPDATE venda SET andamento='$andamento' WHERE id =".$id );
 
-    header("Location: ../Views/andamento-servicos.php");
+    header("Location: ../Views/andamento-servicos.php?v=1");
 
 ?>

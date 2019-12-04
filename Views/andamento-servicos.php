@@ -31,10 +31,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Controle de estoque</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Cadastra de produtos</a>
+              <a class="nav-link" href="Admin.php">Menu</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="andamento-servicos.php">Andamento de Serviços</a>
@@ -48,6 +45,7 @@
     </header>
     <div class="Historico">
         <div class="container">
+        
         <h1>Histórico</h1>
           <div class="col-md-12">
             <table class="table">
@@ -85,9 +83,17 @@
                 <?php } ?>
               </tbody>
             </table>
+
           </div>
         </div>
     </body>
+    <?php
+          $v = $_GET['v'];
+          if ($v==1) {
+            echo "<script>
+            window.alert('Andamento atualizado com sucesso!');
+          </script>";
+        } ?>
     </html>
 
 

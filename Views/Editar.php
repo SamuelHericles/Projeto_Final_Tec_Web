@@ -27,7 +27,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="Admin.php">Controle de estoque</a></li>
+            <li class="nav-item active"><a class="nav-link" href="Admin.php">Menu</a></li>
           </ul>
           <form class="form-inline mt-2 mt-md-0" method="POST" action="../Controlers/Login.php">
             <input type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-blue" value="Sair">
