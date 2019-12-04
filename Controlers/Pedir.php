@@ -1,4 +1,6 @@
 <?php
+
+
     include 'Conexao.php';
 
     $id_cliente = $_GET['id_cliente'];

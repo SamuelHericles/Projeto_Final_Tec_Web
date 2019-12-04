@@ -55,5 +55,9 @@ INSERT INTO cliente (nome, email, senha) VALUES ('Zé Soares', 'zeso@gmail.com',
 INSERT INTO cliente (nome, email, senha) VALUES ('Maria', 'maria@gmail.com', '123');
 
 INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('Formatacao', 50.00, 10, 'servico', 'formatação de computador');
-INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('HD 500gb', 150.00, 10, 'produto', 'toshiba s/ garantia');
-INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('SSD 240gb', 180.00, 10, 'produto', 'kingston');
+INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('HD 500gb', 150.00, 10, 'produto', 'toshiba com garantia');
+INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('SSD 240gb', 180.00, 10, 'produto', 'kingston com garantia');
+INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('Led de teclado', 60.00, 10, 'produto', 'led de iluminação de teclado');
+INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('Formatacao', 50.00, 10, 'servico', 'formatação de computador');
+INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('Upgrade SSD', 15.00, 10, 'servico', 'agilidade no acesso aos arquivos');
+INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('Troca de tela Iphone', 100.00, 10, 'servico', 'tela padrão de mercado');

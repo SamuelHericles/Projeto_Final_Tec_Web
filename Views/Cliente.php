@@ -110,8 +110,7 @@
                       <td><?php echo $dado1['quantidade']; ?></td>
                       <td><?php echo $dado1['categoria']; ?></td>
                       <td><?php echo $dado1['descricao']; ?></td>
-                      <td><a class="text-primary" href="../Controlers/Pedir.php?id=<?php echo $dado1['id'];?>&id_cliente=<?php echo $dado['id'];?>&qtd=<?php echo $dado1['quantidade'];?>">Pedir</a></td>
-                    
+                      <td><a id="pedir" class="text-primary" href="../Controlers/Pedir.php?id=<?php echo $dado1['id'];?>&id_cliente=<?php echo $dado['id'];?>&qtd=<?php echo $dado1['quantidade'];?>">Pedir</a></td>
                     </tr>
                   <?php } } ?>
                 </tbody>   
@@ -122,4 +121,4 @@
       </div>
     </main>
   </body>
-</html>
+</html> 
