@@ -14,11 +14,11 @@
   </head>
 
   <body id = "login" class="text-center">
-    <form class="backbtn form-inline " method="POST" action="../index.php">
+    <form class="backbtn form-inline " method="POST" action="./index.php">
       <input type="submit" name="BTEnvia" class="btn btn-info " value="Voltar">
     </form>
     <div class="divlogin">
-      <form class="form-signin" method = "post" action ="./Acess.php" >
+      <form class="form-signin" method = "post" action ="../Controlers/Acess.php" >
         <div class="entrada">
           <img class="mb-4" src="../Imagens/Logo.png" alt="" width="50%" height="50%">
           <input  type="loginb" name ="login" id="inputEmail" class="form-control" placeholder="Email:" required="" autofocus="">

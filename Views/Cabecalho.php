@@ -26,7 +26,7 @@
             <li class="nav-item"><a class="nav-link" href="../Views/Diferenciais.php">Diferenciais</a></li>
             <li class="nav-item"><a class="nav-link" href="../Views/Contato.php">Contato</a></li>
           </ul>
-          <form class="form-inline mt-2 mt-md-0" method="POST" action="../Controlers/Login.php">
+          <form class="form-inline mt-2 mt-md-0" method="POST" action="../Views/Login.php">
             <input type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-green" value="Login">
           </form>
         </div>
