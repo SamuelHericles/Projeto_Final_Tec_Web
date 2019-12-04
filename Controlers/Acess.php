@@ -12,15 +12,15 @@
     if(mysqli_num_rows($result_cliente) > 0 ){
         $_SESSION['login'] = $login;
         $_SESSION['senha'] = $senha;
-        header('location:../Views/Cliente.php');
+        header('location:../Views/Cliente.php?a=1');
     } else {
         if(mysqli_num_rows($result_funcionario) > 0 ){
             $_SESSION['login'] = $login;
             $_SESSION['senha'] = $senha;
-            header('location:../Views/Admin.php');
+            header('location:../Views/Admin.php?a=2');
         }
         else
-            header('location:./Login.php');
+            header('location:./Login.php?r=1');
     }
 
 ?>
