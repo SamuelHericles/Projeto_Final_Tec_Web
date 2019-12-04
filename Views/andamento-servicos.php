@@ -82,7 +82,7 @@
                     <td>
                       <form action="../Controlers/Excluir_Pedido.php" method="POST">
                         <input type="hidden" name="nome" value="<?php echo $hist['venda'];?>">
-                        <input type="submit" class="btn btn-primary">
+                        <input type="submit" class="btn btn-primary" value="Exluir">
                       </form>
                     </td>
 
