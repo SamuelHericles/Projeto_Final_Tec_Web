@@ -22,12 +22,12 @@
         if($senha == $senha_c){
             $result_cliente = mysqli_query($con,"INSERT INTO cliente(nome,email,senha) VALUES ('$nome','$email','$senha')");
             session_destroy();
-            header('location:./Login.php?r=3');
+            header('location:./Views/Login.php?r=3');
         } else{
             session_destroy();
-            header('location:./Login.php?v=2?r=2');
+            header('location:./Views/Login.php?v=2?r=2');
         }
     }else{
-        header('location: ./Login.php?v=1');
+        header('location:./Views/Login.php?v=1');
     }
 ?>

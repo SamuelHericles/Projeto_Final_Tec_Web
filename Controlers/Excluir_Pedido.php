@@ -5,5 +5,5 @@
     echo $nome;
     $result_cliente = mysqli_query($con,"DELETE FROM venda WHERE id= '$nome'");
     
-    header('location:../Views/andamento-servicos.php');
+    header('location:../Views/Andamento-servicos.php');
 ?>
