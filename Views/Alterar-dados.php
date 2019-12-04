@@ -34,7 +34,7 @@
         </button>
         <div class="collapse navbar-collapse">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="alterar-dados.php">Alterar Dados</a>
+          <a class="nav-item nav-link" href="Alterar-dados.php">Alterar Dados</a>
         </div>
         </div>
         <form class="form-inline mt-2 mt-md-0" method="post" action="../Controlers/Logout.php">
