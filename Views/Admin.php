@@ -55,6 +55,13 @@
             window.alert('Produto excluído com sucesso!');
           </script>";
         } ?>
+      <?php
+          $a = $_GET['a'];
+          if ($a==2) {
+            echo "<script>
+              window.alert('Seja bem-vindo !');
+          </script>";
+        } ?>
         <h2>Produtos</h2>
           <div class="table-responsive">
             <div class="tabela_prod">
@@ -78,7 +85,7 @@
                       <td><?php echo $dado['quantidade']; ?></td>
                       <td><?php echo $dado['categoria']; ?></td>
                       <td><?php echo $dado['descricao']; ?></td>
-                      <td><a class="text-primary" href="./Editar.php?id=<?php echo $dado['id'];?>">Editar</a></td>
+                      <td><a class='Bem-vindo' ""text-primary" href="./Editar.php?id=<?php echo $dado['id'];?>">Editar</a></td>
                       <td><a class="text-danger" href="../Controlers/Excluir.php?id=<?php echo $dado['id'];?>">Excluir</a></td>
                     </tr>
                   <?php } ?>

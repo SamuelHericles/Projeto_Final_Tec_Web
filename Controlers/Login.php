@@ -29,8 +29,9 @@
       </form>
     </div>  
   </body>
-  <?php
-          $v = $_GET['v'];
+      <?php
+        $v = $_GET['v'];
+        $r = $_GET['r'];
           if ($v==1) {
             echo "<script>
             window.alert('Email ja cadastrado!');
@@ -38,8 +39,18 @@
         }
         if ($v==2) {
           echo "<script>
-          window.alert('As senhas devem ser iguais!');
-        </script>";
-      }
-         ?>
+            window.alert('As senhas devem ser iguais!');
+          </script>";
+        }
+        if ($r==1) {
+          echo "<script>
+            window.alert('Login ou senha não coincidem!');
+          </script>";
+        }
+        if ($r==3) {
+          echo "<script>
+            window.alert('Registrado com sucesso!');
+          </script>";
+        }
+      ?>
 </html>
