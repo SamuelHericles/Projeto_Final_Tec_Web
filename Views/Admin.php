@@ -40,7 +40,7 @@
               <a class="nav-link" href="andamento-servicos.php">Andamento de Serviços</a>
             </li>
           </ul>
-          <form class="form-inline mt-2 mt-md-0" method="POST" action="../Controlers/Login.php">
+          <form class="form-inline mt-2 mt-md-0" method="POST" action="../Controlers/Logout.php">
             <input type="submit" name="BTEnvia" class="btn btn-primary btn-lg btn-block btn-blue" value="Sair">
           </form>
         </div>
