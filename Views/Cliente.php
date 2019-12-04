@@ -2,19 +2,9 @@
     session_start();
 
     include('../Controlers/Conexao.php');
+    include('../Controlers/Consulta_produtos.php');
+    include('../Controlers/Consulta_historico_id.php');
 
-    $login = $_SESSION['login'];
-    $result_cliente = mysqli_query($con,"SELECT * FROM cliente WHERE email = '$login' ");
-    $dado = $result_cliente->fetch_array();
-    $s1 = $dado['id'];
-    $result_vend = mysqli_query($con,"SELECT * FROM venda WHERE id_cliente = $s1");
-    $dadosv = $result_vend->fetch_array();
-    $iv = $dadosv['id_cliente'];
-
-    $result_hist = mysqli_query($con,"SELECT p.id, p.nome,p.categoria, p.descricao, v.andamento, p.preco, p.quantidade FROM venda v INNER JOIN cliente c ON c.id = v.id_cliente INNER JOIN produtos p ON v.id_produto=p.id WHERE v.id_cliente = '$iv' ");
-
-    $result = mysqli_query($con,"SELECT * FROM produtos");
-    $produto = $result->fetch_array();
 ?>
 
 <!DOCTYPE html>
@@ -109,15 +99,15 @@
                   </tr>
                 </thead> 
                 <tbody>
-                  <?php while($dado1 = $result->fetch_array()){?>
-                    <?php if($dado1['quantidade']>0){ ?>
+                  <?php while($dados = $result_cliente->fetch_array()){?>
+                    <?php if($dados['quantidade']>0){ ?>
                     <tr>
-                      <td><?php echo $dado1['nome']; ?></td>
-                      <td> R$ <?php echo $dado1['preco']; ?></td>
-                      <td><?php echo $dado1['quantidade']; ?></td>
-                      <td><?php echo $dado1['categoria']; ?></td>
-                      <td><?php echo $dado1['descricao']; ?></td>
-                      <td><a id="pedir" class="text-primary" href="../Controlers/Pedir.php?id=<?php echo $dado1['id'];?>&id_cliente=<?php echo $dado['id'];?>&qtd=<?php echo $dado1['quantidade'];?>">Pedir</a></td>
+                      <td><?php echo $dados['nome']; ?></td>
+                      <td> R$ <?php echo $dados['preco']; ?></td>
+                      <td><?php echo $dados['quantidade']; ?></td>
+                      <td><?php echo $dados['categoria']; ?></td>
+                      <td><?php echo $dados['descricao']; ?></td>
+                      <td><a id="pedir" class="text-primary" href="../Controlers/Pedir.php?id=<?php echo $dados['id'];?>&id_cliente=<?php echo $dado['id'];?>&qtd=<?php echo $dados['quantidade'];?>">Pedir</a></td>
                     </tr>
                   <?php } } ?>
                 </tbody>   
