@@ -1,7 +1,7 @@
 <?php
 
   include('../Controlers/Conexao.php');
-  $result_cliente = mysqli_query($con,"SELECT * FROM produtos");
+  include('../Controlers/Consulta_produtos.php');
     
 ?>
 
@@ -85,7 +85,7 @@
                       <td><?php echo $dado['quantidade']; ?></td>
                       <td><?php echo $dado['categoria']; ?></td>
                       <td><?php echo $dado['descricao']; ?></td>
-                      <td><a class='Bem-vindo' ""text-primary" href="./Editar.php?id=<?php echo $dado['id'];?>">Editar</a></td>
+                      <td><a class="text-primary" href="./Editar.php?id=<?php echo $dado['id'];?>">Editar</a></td>
                       <td><a class="text-danger" href="../Controlers/Excluir.php?id=<?php echo $dado['id'];?>">Excluir</a></td>
                     </tr>
                   <?php } ?>
