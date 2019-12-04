@@ -56,6 +56,7 @@
                   <th>Nome do Produto</th>  
                   <th>Andamamento</th>
                   <th>Ação</th>
+                  <th>Excluir</th>
                 </tr>
               </thead>
               <tbody>
@@ -65,20 +66,26 @@
                     <td><?php echo $hist['nome']; ?></td>
                     <td><?php echo $hist['produto']; ?></td>
                     <td>
-                    <form action="../Controlers/Atualiza-andamento.php" method="GET">
-                    <div class="form-group">
-                     <select class="form-control" id="exampleFormControlSelect1" name="andamento">
-                        <option value="<?php echo $hist['andamento'] ?>" selected><?php echo $hist['andamento']; ?></option>
-                        <option value="Requerido">Requerido</option>
-                        <option value="Instalando">Instalando</option>
-                        <option value="Concluido">Concluído</option>
-                        <option value="Entregue">Entregue</option>
-                        </select>
-                        <input type="hidden" value="<?php echo $hist['venda']?>" name="id">
-                    </div>
-                    
+                      <form action="../Controlers/Atualiza-andamento.php" method="GET">
+                        <div class="form-group">
+                          <select class="form-control" id="exampleFormControlSelect1" name="andamento">
+                              <option value="<?php echo $hist['andamento'] ?>" selected><?php echo $hist['andamento']; ?></option>
+                              <option value="Requerido">Requerido</option>
+                              <option value="Instalando">Instalando</option>
+                              <option value="Concluido">Concluído</option>
+                              <option value="Entregue">Entregue</option>
+                              </select>
+                              <input type="hidden" value="<?php echo $hist['venda']?>" name="id">
+                        </div>
                     </td>
                     <td><button type="submit" class="btn btn-primary">Atualizar</button></form></td>
+                    <td>
+                      <form action="../Controlers/Excluir_Pedido.php" method="POST">
+                        <input type="hidden" name="nome" value="<?php echo $hist['venda'];?>">
+                        <input type="submit" class="btn btn-primary">
+                      </form>
+                    </td>
+
                   </tr>
                 <?php } ?>
               </tbody>

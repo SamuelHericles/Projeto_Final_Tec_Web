@@ -1,7 +1,6 @@
 <?php
 
   include('../Controlers/Conexao.php');
-  $consulta = "SELECT * FROM produtos";
   $result_cliente = mysqli_query($con,"SELECT * FROM produtos");
     
 ?>
