@@ -20,7 +20,7 @@
             header('location:../Views/Admin.php?a=2');
         }
         else
-            header('location:./Views/Login.php?r=1');
+            header('location:../Views/Login.php?r=1');
     }
 
 ?>
