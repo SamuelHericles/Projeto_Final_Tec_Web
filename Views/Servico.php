@@ -51,7 +51,7 @@
                   uma tecnologia incrível com um suporte ainda melhor.</p>
                 <small class="text-info">Postado pelo Consumer Internet Chief em 12/06/16</small>
                 <hr>
-                <a href="../Controlers/Login.php" class=" btn btn-success">Fazer orçamento</a>
+                <a href="../Views/Login.php" class=" btn btn-success">Fazer orçamento</a>
               </div>
             </div>
               <div class="card card-outline-secondary my-4">
@@ -82,7 +82,7 @@
                     <p>Nota: O reparo por uma assistência técnica autorizada ocorre mediante a entrega do produto pelo consumidor na própria assistência existente em sua cidade ou na cidade mais próxima, sendo que a retirada também é realizada pelo consumidor no mesmo local.</p>
                   <small class="text-info">Postado pelo Diretor de Multicanais e Varejo em 20/09/17</small>
                   <hr>
-                  <a href="../Controlers/Login.php" class="btn btn-success">Fazer orçamento</a>
+                  <a href="../Views/Login.php" class="btn btn-success">Fazer orçamento</a>
                 </div>
               </div>
             <div class="card card-outline-secondary my-4">
