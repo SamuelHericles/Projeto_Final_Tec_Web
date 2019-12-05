@@ -1,7 +1,7 @@
 <?php 
     session_start();
 
-    include('Conexao.php');
+    include 'Conexao.php' ;
 
     $nome = $_POST['nome'];
     $preco = $_POST['preco'];
