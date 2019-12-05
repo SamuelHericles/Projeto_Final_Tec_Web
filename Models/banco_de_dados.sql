@@ -46,6 +46,8 @@ CREATE TABLE venda
 ALTER TABLE venda ADD CONSTRAINT fk_cliente FOREIGN KEY (id_cliente) REFERENCES cliente(id);
 ALTER TABLE venda ADD CONSTRAINT fk_produtos FOREIGN KEY (id_produto) REFERENCES produtos(id);
 
+
+
 INSERT INTO funcionario (nome, email, senha, cargo) VALUES ('Seu Zé', 'ze1@gmail.com', '123', 'atendente');
 INSERT INTO funcionario (nome, email, senha, cargo) VALUES ('Seu Assis', 'assis@gmail.com', '123', 'atendente');
 INSERT INTO funcionario (nome, email, senha, cargo) VALUES ('Seu Alfredo', 'alfredo@gmail.com', '123', 'atendente');
@@ -61,3 +63,26 @@ INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('Le
 INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('Formatacao', 50.00, 10, 'servico', 'formatação de computador');
 INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('Upgrade SSD', 15.00, 10, 'servico', 'agilidade no acesso aos arquivos');
 INSERT INTO produtos (nome, preco, quantidade, categoria, descricao) VALUES ('Troca de tela Iphone', 100.00, 10, 'servico', 'tela padrão de mercado');
+
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (1, 1, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (1, 2, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (1, 3, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (1, 4, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (1, 5, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (1, 6, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (1, 7, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (2, 1, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (2, 2, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (2, 3, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (2, 4, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (2, 5, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (2, 6, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (2, 7, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (3, 1, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (3, 2, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (3, 3, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (3, 4, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (3, 5, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (3, 6, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (3, 7, 'requerido');
+INSERT INTO venda (id_cliente, id_produto, andamento) VALUES (3, 8, 'requerido');
