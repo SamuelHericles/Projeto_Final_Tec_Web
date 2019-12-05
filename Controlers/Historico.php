@@ -1,9 +1,9 @@
 <?php
     session_start();
     
-    include('./Conexao.php');
-    include('./Consulta_vendas.php');
-    include('./Consulta_historico.php');
+    include('Conexao.php');
+    include('Consulta_vendas.php');
+    include('Consulta_historico.php');
     $login = $_SESSION['login'];
 ?>
 

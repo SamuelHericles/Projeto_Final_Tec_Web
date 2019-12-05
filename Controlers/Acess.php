@@ -1,7 +1,7 @@
 <?php 
     session_start();
     
-    include('./Conexao.php');
+    include('Conexao.php');
 
     $login = $_POST['login'];
     $senha = $_POST['senha'];

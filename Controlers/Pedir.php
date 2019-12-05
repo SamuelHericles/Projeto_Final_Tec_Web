@@ -1,5 +1,5 @@
 <?php
-    include('./Conexao.php');
+    include('Conexao.php');
 
     $id_cliente = $_GET['id_cliente'];
     $id_produto = $_GET['id'];

@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    include('./Conexao.php');
+    include('Conexao.php');
 
     $login = $_SESSION['login'];
     $result_cliente = mysqli_query($con,"SELECT * FROM cliente WHERE email = '$login' ");
