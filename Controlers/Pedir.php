@@ -1,5 +1,5 @@
 <?php
-    include 'Conexao.php';
+    include('./Conexao.php');
 
     $id_cliente = $_GET['id_cliente'];
     $id_produto = $_GET['id'];
@@ -9,6 +9,6 @@
     mysqli_query($con,$query);
     mysqli_query($con, "UPDATE produtos SET quantidade='".$quantidade."' WHERE id= $id_produto");
 
-    header("Location: ../Views/Cliente.php?v=1");
+    header("Location:../Views/Cliente.php?v=1");
 
 ?>

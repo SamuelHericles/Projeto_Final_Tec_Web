@@ -1,5 +1,5 @@
 <?php 
-    include('../Controlers/Conexao.php');
+    include('./Conexao.php');
 
     $id = $_GET['id'];
     $result_cliente = mysqli_query($con,"SELECT * FROM produtos WHERE id = '$id'");

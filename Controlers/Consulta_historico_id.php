@@ -1,5 +1,5 @@
 <?php    
-    include('../Controlers/Conexao.php');
+    include('./Conexao.php');
     $login = $_SESSION['login'];
     $result_cliente1 = mysqli_query($con,"SELECT * FROM cliente WHERE email = '$login' ");
     $dado = $result_cliente1->fetch_array();
