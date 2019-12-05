@@ -49,12 +49,12 @@
       </div>
       <div class="container">
       <?php
-          $v = $_GET['v'];
+          /*$v = $_GET['v'];
           if ($v==1) {
             echo "<script>
             window.alert('Produto excluído com sucesso!');
           </script>";
-        } ?>
+        } */?>
       <?php
           $a = $_GET['a'];
           if ($a==2) {
