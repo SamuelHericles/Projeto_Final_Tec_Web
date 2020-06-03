@@ -1,6 +1,6 @@
 <?php
     session_start();
-
+    ini_set('default_charset', 'UTF8');
     include('../Controlers/Conexao.php');
     include('../Controlers/Consulta_produtos.php');
     include('../Controlers/Consulta_historico_id.php');
