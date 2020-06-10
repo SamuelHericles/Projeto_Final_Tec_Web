@@ -5,11 +5,11 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="stylesheet" href="../Models/reset.css">
-      <link rel="stylesheet" href="../Models/css/bootstrap.min.css">
-      <link rel="stylesheet" href="../Models/css/bootstrap.css">
-      <link rel="stylesheet" href="../Models/Carousel.css">
-      <link rel="stylesheet" href="../Models/Estilo.css">
+      <link rel="stylesheet" type="text/html" href="../Models/reset.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
+      <link rel="stylesheet" type="text/html" href="../Models/Carousel.css">
+      <link rel="stylesheet" type="text/html" href="../Models/Estilo.css">
       <title>SisTec - Assistência Técnica</title>
   </head>
 

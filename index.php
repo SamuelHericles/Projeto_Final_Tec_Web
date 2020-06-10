@@ -76,5 +76,5 @@
   </main>
 
 <?php
-  include "Views/Footer.php"
+  include "../Views/Footer.php"
 ?>
