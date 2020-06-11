@@ -26,8 +26,8 @@ Após isso abra seu navegador e digite ```localhost:8080```(pode ser também out
 
 # Equipe 
 
-* Daniel Jorge - 378582
-* Gerônimo Pereira - 385145
-* Pedro Renoir - 389113
-* Ruan Campos - 374899
-* Samuel Hericles - 389118
+* Daniel Jorge
+* Gerônimo Pereira
+* Pedro Renoir
+* Ruan Campos
+* Samuel Hericles
