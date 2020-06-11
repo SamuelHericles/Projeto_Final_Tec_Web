@@ -1,5 +1,4 @@
-# Projeto_Final_Tec_Web
-Projeto final da disciplina de Tecnologias Web na Universidade Federal do Ceará - Campus Sobral.
+# Projeto final da disciplina de tecnologias web na Universidade Federal do Ceará - Campus Sobral.
 
 # Dependências
 
