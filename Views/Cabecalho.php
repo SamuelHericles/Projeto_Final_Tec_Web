@@ -6,8 +6,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link rel="stylesheet" type="text/html" href="../Models/reset.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.css">
+      <link rel="stylesheet" href="../Models/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../Models/css/bootstrap.css">
       <link rel="stylesheet" type="text/html" href="../Models/Carousel.css">
       <link rel="stylesheet" type="text/html" href="../Models/Estilo.css">
       <title>SisTec - Assistência Técnica</title>
@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item"><a class="nav-link" href="../Views/Servico.php">Serviços</a></li>
-            <li class="nav-item"><a class="nav-link" href="../Views/Diferenciais.php">Diferenciais</a></li>
+            <li class="nav-item"><a class="nav-link" href="Diferenciais.php">Diferenciais</a></li>
             <li class="nav-item"><a class="nav-link" href="../Views/Contato.php">Contato</a></li>
           </ul>
           <form class="form-inline mt-2 mt-md-0" method="POST" action="../Views/Login.php">
@@ -33,3 +33,4 @@
       </nav>
     </header>
           
+  
